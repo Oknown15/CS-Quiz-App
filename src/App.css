@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: RGBA(0, 0, 0, 0.64) !important;
+}
+
+.text {
+  border-radius: 20px !important;
+  background-color: RGBA(0, 0, 0, 0.48);
+  margin: 10px;
+  padding: 10px;
+  color: #fff; 
+  box-shadow: 1px 1px 3px 2px #434242 !important;
+}
