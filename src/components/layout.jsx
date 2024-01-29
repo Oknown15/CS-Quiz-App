@@ -14,9 +14,9 @@ function Layout( ) {
     const OptionsArray = contextValue[currentOptions].options;
     const CorrectAnswer = contextValue[currentQuestion].options.isCorrect;
     
-    // function previousQuestion() {
-    //     setCurrentQuestion(currentQuestion - 1);
-    // }
+    function previousQuestion() {
+        setCurrentQuestion(currentQuestion - 1);
+    }
 
     const optionClicked = (CorrectAnswer) => {
         setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length);
@@ -79,9 +79,9 @@ function Layout( ) {
         )}
 
         <div>
-            {/* {
+            {
             currentQuestion >=1 && <button className='btn' onClick={() => previousQuestion()}>previous question </button>
-            } */}
+            }
         </div>
         </div>
     );
