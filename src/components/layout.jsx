@@ -14,9 +14,9 @@ function Layout( ) {
     const OptionsArray = contextValue[currentOptions].options;
     const CorrectAnswer = contextValue[currentQuestion].options.isCorrect;
     
-    function previousQuestion() {
-        setCurrentQuestion(currentQuestion - 1);
-    }
+    // function previousQuestion() {
+    //     setCurrentQuestion(currentQuestion - 1);
+    // }
 
     const optionClicked = (CorrectAnswer) => {
         setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length);
@@ -44,7 +44,7 @@ function Layout( ) {
             <Box width={"120px"}>
                 <img src={Logo}></img>
             </Box>
-            <AbsoluteCenter p={10} width={300} opacity={"10%"}>
+            <AbsoluteCenter zIndex={-1} p={10} width={300} opacity={"10%"}>
                 <img
                 src={Logo}></img>
             </AbsoluteCenter>
@@ -71,7 +71,7 @@ function Layout( ) {
                </Box>
                </div>
                ) : (
-        <div class>
+        <div className='record'>
               <p>Score so far : {score}/ 24</p> 
               <p>{(score/24 ) * 100}%</p>
 
@@ -79,9 +79,9 @@ function Layout( ) {
         )}
 
         <div>
-            {
+            {/* {
             currentQuestion >=1 && <button className='btn' onClick={() => previousQuestion()}>previous question </button>
-            }
+            } */}
         </div>
         </div>
     );

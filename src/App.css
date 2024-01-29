@@ -20,10 +20,12 @@ body {
   width: 80%;
   margin: 10px auto;
   box-shadow: 1px 1px 3px 2px #434242 !important;
+
 }
 
 .bdy {
   font-family: 'Raleway', sans-serif;
+
 }
 
 .btn {
@@ -35,4 +37,24 @@ body {
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.record
+{
+  border-end-start-radius: 120%;
+  border-start-start-radius: 100%;
+  border-start-end-radius: 80%;
+  border-end-end-radius: 170%;
+  background-color: #434242;
+  color:#fff;
+  height:110px;
+}
+
+@media screen and (min-width: 720px) {
+
+  .record{
+    width: 70%;
+    margin: 0 auto;
+  }
+  
 }
