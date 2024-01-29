@@ -1,7 +1,7 @@
 import React, { useState ,createContext, useContext } from 'react';
 // import Page from './Page';
 import Layout from './layout';
-
+// import Images from './Images/coding.png';
 
 export const userContext = React.createContext()
 
@@ -258,15 +258,22 @@ function Question() {
                 {id: 2, text: "cyber secuirty", isCorrect : false},
                 { id: 3, text: "all of the above", isCorrect: true}
             ],
+             greetings : "Thank you for  coming this far"
+
         }
+        
     ]
 
     return (
+        <div>
+            <div>
+            {/* <Images/> */}
+            </div>
         
           <userContext.Provider value={myArray}>
             <Layout/>
           </userContext.Provider>
-        
+       </div> 
     );
 }
 

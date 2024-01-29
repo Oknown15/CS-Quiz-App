@@ -3,7 +3,7 @@ import './App.css'
 // import Page from './components/Page'?
 import Question from './components/Question'
 import Layout from './components/layout'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react';
 
 // export const userContext = React.createContext()
 
@@ -12,8 +12,9 @@ function App() {
   return (
     <>
     <ChakraProvider>
-      <Question/>
+      <Question />
     </ChakraProvider>
+
     </>
   )
 }
