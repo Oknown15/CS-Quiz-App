@@ -160,8 +160,7 @@ function Question() {
             ],
         },
         {
-            Questions: "what is the output of the following code?",
-            code: "var1 = 1, var2 = 2, var3 = '3', print(var1 + var2 + var3)",
+            Questions: "what is the output of the following code?, var1 = 1, var2 = 2, var3 = '3', print(var1 + var2 + var3)",
             options: [
                 { id: 0, text: "6", isCorrect : false },
                 { id: 1, text: "2", isCorrect : false},
@@ -251,7 +250,7 @@ function Question() {
         },
 
         {
-            Questions: "what aspect of somputer science is quite popular in this age?",
+            Questions: "what aspect of computer science is quite popular in this age?",
             options: [
                 { id: 0, text: "data analysis", isCorrect : false },
                 { id: 1, text: "software development", isCorrect : false},
