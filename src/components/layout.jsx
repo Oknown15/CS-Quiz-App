@@ -67,6 +67,7 @@ function Layout( ) {
 
         { showQuestion == false ? (
               <div>
+                <p id='p'>are you ready?</p>
                 <Center
                     textTransform={'capitalize'}
                      >
@@ -76,7 +77,9 @@ function Layout( ) {
         ) :
         showFinalResults == false ? (
             <div>
-                <Box pos={'absolute'} top={50} right={10} fontSize={'4xl'}>{count}</Box>
+                <Box pos={'absolute'} textTransform={'capitalize'} top={50} right={10} fontSize={'4xl'}>
+                    {count}
+                    </Box>
                <Box
                bg="BlackAlpha.700"
                textTransform={'capitalize'}

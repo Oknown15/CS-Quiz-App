@@ -1,14 +1,10 @@
 import React, { useState ,createContext, useContext } from 'react';
-// import Page from './Page';
 import Layout from './layout';
-// import Images from './Images/coding.png';
 
 export const userContext = React.createContext()
 
-
 function Question() {
-
-    
+   
     const myArray = [
         {
             Questions: "which of the following device is used only in LAN (local area network)?",
@@ -21,7 +17,6 @@ function Question() {
         },
         {
             Questions: "what is the output of the following code? def calculate (num1,num2); res= num1 * num2 print(res) calculate(5,6)",
-        
             options: [
                 { id: 0, text: "20", isCorrect : false },
                 { id: 1, text: "30", isCorrect : true},
@@ -29,7 +24,6 @@ function Question() {
                 { id: 3, text: "null", isCorrect: false}
             ],
         },
-
         {
             Questions: "what does the term software development stand for?",
             options: [
@@ -39,7 +33,6 @@ function Question() {
                 { id: 3, text: "creating solutions to problems using models and programs that are programmed", isCorrect: true}
             ],
         },
-
         {
             Questions: "what is the output of the following x = 24/8 * (3+3)* 4+2 print(x)?",
             options: [
@@ -49,7 +42,6 @@ function Question() {
                 { id: 3, text: "10.8", isCorrect: false}
             ],
         },
-
         {
             Questions: "the term _______ designates a piece of software that might be added to a computer system to enhance its functionality?",
             options: [
@@ -59,7 +51,6 @@ function Question() {
                 { id: 3, text: "all of the above", isCorrect: false}
             ],
         },
-
         {
             Questions: "every web page has a unique address called a ____",
             options: [
@@ -69,7 +60,6 @@ function Question() {
                 { id: 3, text: "USB", isCorrect: false}
             ],
         },
-
         {
             Questions: "what is the use of a compiler in programming?",
             options: [
@@ -257,8 +247,6 @@ function Question() {
                 {id: 2, text: "cyber secuirty", isCorrect : false},
                 { id: 3, text: "all of the above", isCorrect: true}
             ],
-             greetings : "Thank you for  coming this far"
-
         }
         
     ]
