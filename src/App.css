@@ -39,6 +39,8 @@ body {
   margin-bottom: 10px;
 }
 
+
+
 .record
 {
   border-end-start-radius: 120%;
@@ -56,5 +58,30 @@ body {
     width: 70%;
     margin: 0 auto;
   }
+
+  .startbtn {
+    background-color: #E6E6FA;
+    padding: 15px;
+    border-end-start-radius: 500%;
+    border-start-start-radius: 100%;
+    border-start-end-radius: 500%;
+    border-end-end-radius: 170%;
+    width: 60%;
+    height: 150px;
+  }
   
+}
+
+@media screen and (max-width: 600px) {
+  .startbtn {
+    background-color: #E6E6FA;
+    padding: 30px;
+    border-end-start-radius: 500%;
+    border-start-start-radius: 100%;
+    border-start-end-radius: 500%;
+    border-end-end-radius: 170%;
+    width: 70%;
+    margin-top: 90px;
+  
+  }
 }

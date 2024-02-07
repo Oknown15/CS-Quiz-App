@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { userContext } from './Question';
 import { AbsoluteCenter, Box, Center, Text } from '@chakra-ui/react';
 import Logo from './Images/coding.png';
@@ -6,26 +6,32 @@ import Logo from './Images/coding.png';
 
 function Layout( ) {
 
-    const [showFinalResults, setFinalResults] = useState(false)
-    const [currentQuestion, setCurrentQuestion] = useState(0)
-    const [currentOptions, setCurrentOptions] = useState(0)
-    const [score, setScore] = useState(0)
+    const [showFinalResults, setFinalResults] = useState(false);
+    const [count, setCount] = useState(10);
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [currentOptions, setCurrentOptions] = useState(0);
+    const [showQuestion, RenderQuestion] = useState(false);
+    const [score, setScore] = useState(0);
     const contextValue = useContext(userContext);
     const OptionsArray = contextValue[currentOptions].options;
     const CorrectAnswer = contextValue[currentQuestion].options.isCorrect;
-    
-    function previousQuestion() {
-        setCurrentQuestion(currentQuestion - 1);
+
+    function showQuestions(event) {
+       RenderQuestion(true);
+       setCount(10)
+    //    const  [audio] = useState(new Audio('C:\Users\hp\Documents\CS Quiz App\public\buzz.wav'));
+    //    audio.play();
     }
 
     const optionClicked = (CorrectAnswer) => {
-        setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length);
-        setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length)
+        setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length); 
+        setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length);
         console.log(CorrectAnswer);
-
-        
+        setCount(10);
+     //Conditional statements   
     if(currentQuestion + 1 < contextValue.length) {
         setCurrentQuestion(currentQuestion + 1);
+        
     } else {
         setFinalResults(true);
     }
@@ -34,12 +40,22 @@ function Layout( ) {
     } else {
         console.log("wrong answer");
     }
-
     }
 
+    useEffect(()=> {
+        const Counter = setInterval(() => {
+            if(count > 0) {
+                setCount(count - 1);
+            }
+            else if(count == 0) {
+                setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length); 
+                setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length)
+                setCount(10)
+            }
+        }, 1000);
+        return ()=> clearInterval(Counter);
+    }, [count]);
     return (
-
-
         <div className='bdy'>
             <Box width={"120px"}>
                 <img src={Logo}></img>
@@ -49,8 +65,18 @@ function Layout( ) {
                 src={Logo}></img>
             </AbsoluteCenter>
 
-        { showFinalResults == false ? (
+        { showQuestion == false ? (
+              <div>
+                <Center
+                    textTransform={'capitalize'}
+                     >
+                    <button className='startbtn' onClick={() => showQuestions()}>start</button>
+              </Center>
+          </div>
+        ) :
+        showFinalResults == false ? (
             <div>
+                <Box pos={'absolute'} top={50} right={10} fontSize={'4xl'}>{count}</Box>
                <Box
                bg="BlackAlpha.700"
                textTransform={'capitalize'}
@@ -77,12 +103,6 @@ function Layout( ) {
 
 </div>
         )}
-
-        <div>
-            {
-            currentQuestion >=1 && <button className='btn' onClick={() => previousQuestion()}>previous question </button>
-            }
-        </div>
         </div>
     );
 }
