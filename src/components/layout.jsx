@@ -1,11 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { userContext } from './Question';
-import { AbsoluteCenter, Box, Center, Text } from '@chakra-ui/react';
+import { AbsoluteCenter, Accordion, AccordionIcon,AccordionButton, AccordionItem, AccordionPanel, Box, Center, Text, Grid, GridItem, Button } from '@chakra-ui/react';
 import Logo from './Images/coding.png';
+import audio from './buzz.wav';
+import { ChevronDownIcon } from '@chakra-ui/icons';
 // import { Container, Text, useColorMode, useColorModeValue } from '@chakra-ui/react';
 
 function Layout( ) {
 
+    const [selectedAnswer, setSelectedAnswer] = useState( null);
+    const [FirstRound, setFirstRoundResult] = useState(false)
+    const [isPlaying, setIsplaying] = useState(false);
     const [showFinalResults, setFinalResults] = useState(false);
     const [count, setCount] = useState(10);
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -15,45 +20,422 @@ function Layout( ) {
     const contextValue = useContext(userContext);
     const OptionsArray = contextValue[currentOptions].options;
     const CorrectAnswer = contextValue[currentQuestion].options.isCorrect;
+    const [buttonClicked, setButtonCLicked] = useState(false);
+    const [currentQuestionIndex, setcurrentQuestionIndex] = useState(0)
+    const Total = [];
 
-    function showQuestions(event) {
-       RenderQuestion(true);
-       setCount(10)
-    //    const  [audio] = useState(new Audio('C:\Users\hp\Documents\CS Quiz App\public\buzz.wav'));
-    //    audio.play();
+    const navigateQuestions = (index) => {
+        if(index >= 0 && index < contextValue.length) {
+            setcurrentQuestionIndex(index);
+            setCurrentQuestion(index)
+            setCurrentOptions(index)
+            setCount(10)
+        }
+    }
+
+
+    function showQuestions() {
+        // showRound(false);
+        RenderQuestion(true);
+        setCount(10); 
+                const audioMp = new Audio(audio)
+                 if((!isPlaying) && (count >= 10)){
+                  audioMp.play();
+                 }  else {
+                     audioMp.pause();
+                     audioMp.currentTime = 0;
+                 };
+    
+    }
+
+
+    useEffect(() => {
+        const Button = (event) => {            
+            setFinalResults(true);
+            RenderQuestion(true)
+
+            if(buttonClicked){
+                setFinalResults(true);
+
+            }
+        };
+        const showResults = document.querySelectorAll(".btn-main");
+
+        showResults.forEach((element) =>{
+            element.addEventListener('click', Button);
+        });
+
+        return()=>{
+            showResults.forEach((element) => {
+                element.removeEventListener('click', Button);
+            });
+        };
+
+     }, [buttonClicked]);
+  
+    
+
+    useEffect(() => {
+        const RoundOne = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(0);
+            setCurrentOptions(0);
+            setCount(10);
+            
+
+            if(currentQuestion == 24){
+                Total = (score)/25*100
+                showFinalResults(true);
+                RenderQuestion(false);
+                setFirstRoundResult(true);
+
+            }
+        };
+        const listElementROne = document.querySelectorAll(".Roundone");
+
+        listElementROne.forEach((element) =>{
+            element.addEventListener('click', RoundOne);
+        });
+
+        return()=>{
+            listElementROne.forEach((element) => {
+                element.removeEventListener('click', RoundOne);
+            });
+        };
+
+     }, []);
+
+
+     useEffect(() => {
+        const RoundTwo = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(50);
+            setCurrentOptions(50);
+            setCount(10);
+
+            if(currentQuestion == 74){
+                Total = (score)/25*100
+                showFinalResults(true);
+                RenderQuestion(false);
+                setFirstRoundResult(true);
+
+            }
+        };
+        const listElementRTwo = document.querySelectorAll(".Roundtwo");
+
+        listElementRTwo.forEach((element) =>{
+            element.addEventListener('click', RoundTwo);
+        });
+
+        return()=>{
+            listElementRTwo.forEach((element) => {
+                element.removeEventListener('click', RoundTwo);
+            });
+        };
+
+     }, []);
+
+
+
+     
+    useEffect(() => {
+        const RoundThree = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(24);
+            setCurrentOptions(24);
+            setCount(10);
+
+            if(currentQuestion == 50){
+                Total = (score)/25*100
+                showFinalResults(true);
+                RenderQuestion(false);
+                setFirstRoundResult(true);
+
+            }
+        };
+        const listElementRThree = document.querySelectorAll(".Roundthree");
+
+        listElementRThree.forEach((element) =>{
+            element.addEventListener('click', RoundThree);
+        });
+
+        return()=>{
+            listElementRThree.forEach((element) => {
+                element.removeEventListener('click', RoundThree);
+            });
+        };
+
+     }, []);
+
+
+     useEffect(() => {
+        const RoundFour = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(74);
+            setCurrentOptions(74);
+            setCount(10);
+
+            // if(currentQuestion == 100){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRTwo = document.querySelectorAll(".Roundfour");
+
+        listElementRTwo.forEach((element) =>{
+            element.addEventListener('click', RoundFour);
+        });
+
+        return()=>{
+            listElementRTwo.forEach((element) => {
+                element.removeEventListener('click', RoundFour);
+            });
+        };
+
+     }, []);
+
+     useEffect(() => {
+        const RoundFive = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(99);
+            setCurrentOptions(99);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRFive = document.querySelectorAll(".Roundfive");
+
+        listElementRFive.forEach((element) =>{
+            element.addEventListener('click', RoundFive);
+        });
+
+        return()=>{
+            listElementRFive.forEach((element) => {
+                element.removeEventListener('click', RoundFive);
+            });
+        };
+
+     }, []);
+
+
+     
+     useEffect(() => {
+        const RoundSix = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(109);
+            setCurrentOptions(109);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRSix = document.querySelectorAll(".Roundsix");
+
+        listElementRSix.forEach((element) =>{
+            element.addEventListener('click', RoundSix);
+        });
+
+        return()=>{
+            listElementRSix.forEach((element) => {
+                element.removeEventListener('click', RoundSix);
+            });
+        };
+
+     }, []);
+
+     useEffect(() => {
+        const YrIIRoundOne = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(130);
+            setCurrentOptions(130);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrone = document.querySelectorAll(".YRII_Roundone");
+
+        listElementRYrone.forEach((element) =>{
+            element.addEventListener('click', YrIIRoundOne);
+        });
+
+        return()=>{
+            listElementRYrone.forEach((element) => {
+                element.removeEventListener('click', YrIIRoundOne);
+            });
+        };
+
+     }, []);
+
+     useEffect(() => {
+        const YrIIRoundTwo = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(156);
+            setCurrentOptions(156);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrtwo = document.querySelectorAll(".YRII_Roundtwo");
+
+        listElementRYrtwo.forEach((element) =>{
+            element.addEventListener('click', YrIIRoundTwo);
+        });
+
+        return()=>{
+            listElementRYrtwo.forEach((element) => {
+                element.removeEventListener('click', YrIIRoundTwo);
+            });
+        };
+
+     }, []);
+
+
+     useEffect(() => {
+        const YrIIRoundThree = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(182);
+            setCurrentOptions(182);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrthree = document.querySelectorAll(".YRII_Roundthree");
+
+        listElementRYrthree.forEach((element) =>{
+            element.addEventListener('click', YrIIRoundThree);
+        });
+
+        return()=>{
+            listElementRYrthree.forEach((element) => {
+                element.removeEventListener('click', YrIIRoundThree);
+            });
+        };
+
+     }, []);
+
+
+     useEffect(() => {
+        const YrIIRoundFour = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(208);
+            setCurrentOptions(208);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrfour = document.querySelectorAll(".YRII_Roundfour");
+
+        listElementRYrfour.forEach((element) =>{
+            element.addEventListener('click', YrIIRoundFour);
+        });
+
+        return()=>{
+            listElementRYrfour.forEach((element) => {
+                element.removeEventListener('click', YrIIRoundFour);
+            });
+        };
+
+     }, []);
+
+
+    
+
+
+    function Menu(){
+        RenderQuestion(false); 
+        setScore(0);
+        setCurrentQuestion(0);
+        setCurrentOptions(0);
+        setFirstRoundResult(true)
+    }
+
+    function NextQuestion(){
+        setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length); 
+        setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length);
+        setSelectedAnswer(null)
+        setCount(10)
+        
     }
 
     const optionClicked = (CorrectAnswer) => {
-        setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length); 
-        setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length);
+    
         console.log(CorrectAnswer);
-        setCount(10);
+
+        setSelectedAnswer(CorrectAnswer);
+
+        const audioMp = new Audio(audio)
+        if((!isPlaying) && (count >= 10)){
+         audioMp.play();
+        }  else {
+            audioMp.pause();
+            audioMp.currentTime = 0;
+        }  
      //Conditional statements   
     if(currentQuestion + 1 < contextValue.length) {
-        setCurrentQuestion(currentQuestion + 1);
+        // setCurrentQuestion(currentQuestion + 1);
+        console.log("Pressed");
         
     } else {
         setFinalResults(true);
     }
     if(CorrectAnswer == true) {
+         
+
         setScore(score + 1);
+        
     } else {
         console.log("wrong answer");
+        }
     }
-    }
-
     useEffect(()=> {
         const Counter = setInterval(() => {
             if(count > 0) {
                 setCount(count - 1);
             }
             else if(count == 0) {
-                setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length); 
-                setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length)
-                setCount(10)
+                // setCount(10)
+                setSelectedAnswer(null)
             }
-        }, 1000);
-        return ()=> clearInterval(Counter);
+        }, 1800);
+        return () => clearInterval(Counter);
     }, [count]);
     return (
         <div className='bdy'>
@@ -65,7 +447,8 @@ function Layout( ) {
                 src={Logo}></img>
             </AbsoluteCenter>
 
-        { showQuestion == false ? (
+        {
+        showQuestion == false ? (
               <div>
                 <p id='p'>are you ready?</p>
                 <Center
@@ -73,13 +456,58 @@ function Layout( ) {
                      >
                     <button className='startbtn' onClick={() => showQuestions()}>start</button>
               </Center>
+              <div style={{textTransform: 'capitalize', position: 'absolute',top: '100px', right: '0'}}>
+                    <Button  className='btn-main' pos={'absolute'} bottom={0} mt={15} right={5}>result</Button>
+                </div>
+
+              <div>
+                <Center>
+            <Grid className='Rounds_main' cursor={'pointer'} textTransform={'capitalize'} templateColumns='repeat(5, 1fr)' gap={6}>
+                <ul id='Rounds'>
+                {/* Year one */}
+                    <GridItem w='200%' h='10' listStyleType={'none'}>
+                        <li className='Roundone'>round 1</li>
+                        <li className='Roundtwo'>round 2</li>
+                        <li className='Roundthree'>round 3</li>
+                        <li className='Roundfour'>round 4</li>
+                        <li className='Roundfive'>round 5</li>
+                        <li className='Roundsix'>round 6</li>
+                        </GridItem>
+                </ul>
+                {/* Year two  */}
+                    <GridItem className='Yrtwo' listStyleType={ 'none'} w='200%' h='10'>
+                        <li className='YRII_Roundone'>round 1</li>
+                        <li className='YRII_Roundtwo'>round 2</li>
+                        <li className='YRII_Roundthree'>round 3</li>
+                        <li className='YRII_Roundfour'>round 4</li>
+                        <li className=''>round 5</li>
+                        <li className=''>round 6</li>
+                    </GridItem>
+                    {/* Year Three */}
+                    <GridItem listStyleType={'none'} w='200%' h='10'>
+                        <li className=''>round 1</li>
+                        <li className=''>round 2</li>
+                        <li className=''>round 3</li>
+                        <li className=''>round 4</li>
+                        <li className=''>round 5</li>
+                        <li className=''>round 6</li>
+                    </GridItem>
+                    
+                    
+            </Grid>
+                </Center>
+
+            </div>
           </div>
         ) :
         showFinalResults == false ? (
             <div>
                 <Box pos={'absolute'} textTransform={'capitalize'} top={50} right={10} fontSize={'4xl'}>
                     {count}
-                    </Box>
+                </Box>
+                <Box textTransform={'capitalize'} pos={'absolute'} bottom={0}>
+                    <a onClick={() => Menu()}>menu</a>
+                </Box>
                <Box
                bg="BlackAlpha.700"
                textTransform={'capitalize'}
@@ -90,23 +518,34 @@ function Layout( ) {
                     </Text>
             {  
                     OptionsArray.map(option => (
-                    <li onClick={() => optionClicked(option.isCorrect)} className='text' key={option.text}>{option.text} </li>
+                    <li
+                    style={{
+                        backgroundColor: selectedAnswer === option.isCorrect ? option.isCorrect ? 'blue': '#434242' : '#434242'
+                    }}
+                    className='text'
+                    onClick={() => optionClicked(option.isCorrect)} key={option.text}>{option.text} </li>
                 ))
             }
                </Box>
-               <Box pos={'absolute'} right={10}>
-                     <p>Question {currentQuestion}/24</p>
-
+               <Box pos={'absolute'} right={10} top={10}>
+                     <p>Question {currentQuestion}/100</p>
                </Box>
+            <Button pos={'absolute'} right={5} bottom={0} textTransform={'capitalize'} onClick={() => NextQuestion(event)}>next</Button>
+
+               <div className='text'>
+                    {contextValue.map((contextValue, index) => (
+                        <button style={{padding: '10px'}} key={index} onClick={() => navigateQuestions(index)}>{index + 1}</button>
+                    ))}    
+               </div>
                </div>
                ) : (
         <div className='record'>
-              <p>Score so far : {score}/ 24</p> 
-              <p>{(score/24 ) * 100}%</p>
-
-</div>
+            <p>Score so far : {score}/ </p> 
+            <p>{(score/130 ) * 100}%</p>
+        </div>
         )}
         </div>
+        
     );
 }
 
