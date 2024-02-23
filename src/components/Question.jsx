@@ -3459,21 +3459,21 @@ function Question() {
 },
 //sss
 {
-    Questions: "what is the purpose of a firewall in network security ?",
+    Questions: "which of the following is not a programming language ?",
     options: [
-        { id: 0, text: "to encrypt data transmissions", isCorrect : false },
-        { id: 1, text: "to prevent unauthrized access to or fro a private network", isCorrect : true},
-        {id: 2, text: "to manage user authentication", isCorrect : false},
-        { id: 3, text: "to speed up internet connections", isCorrect: false}
+        { id: 0, text: "python ", isCorrect : false },
+        { id: 1, text: "java ", isCorrect : false},
+        {id: 2, text: "SQL ", isCorrect : false},
+        { id: 3, text: " API", isCorrect: true}
     ],
 },
 {
-    Questions: "what is the primary function of an antivirus software ?",
+    Questions: "what is the main difference between TCP and UDP  ?",
     options: [
-        { id: 0, text: "to block spam emails", isCorrect : false },
-        { id: 1, text: "to detect and remove malicious software", isCorrect : true},
-        {id: 2, text: "to secure wireless networks", isCorrect : false},
-        { id: 3, text: "to encrypt files", isCorrect: false}
+        { id: 0, text: " ", isCorrect : false },
+        { id: 1, text: " ", isCorrect : true},
+        {id: 2, text: " ", isCorrect : false},
+        { id: 3, text: " TCP is used for video streaming UDP is used for file transfer", isCorrect: false}
     ],
 },
 {

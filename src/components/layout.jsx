@@ -445,6 +445,94 @@ function Layout( ) {
 
      }, []);
 
+     useEffect(() => {
+        const YrIIIRoundone = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(284);
+            setCurrentOptions(284);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrIIIone= document.querySelectorAll(".YRIII_Roundone");
+
+        listElementRYrIIIone.forEach((element) =>{
+            element.addEventListener('click', YrIIIRoundone);
+        });
+
+        return()=>{
+            listElementRYrIIIone.forEach((element) => {
+                element.removeEventListener('click', YrIIIRoundone);
+            });
+        };
+
+     }, []);
+
+     useEffect(() => {
+        const YrIIIRoundtwo = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(308);
+            setCurrentOptions(308);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrIIItwo= document.querySelectorAll(".YRIII_Roundtwo");
+
+        listElementRYrIIItwo.forEach((element) =>{
+            element.addEventListener('click', YrIIIRoundtwo);
+        });
+
+        return()=>{
+            listElementRYrIIItwo.forEach((element) => {
+                element.removeEventListener('click', YrIIIRoundtwo);
+            });
+        };
+
+     }, []);
+
+
+     useEffect(() => {
+        const YrIIIRoundthree = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(332);
+            setCurrentOptions(332);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrIIIthree= document.querySelectorAll(".YRIII_Roundthree");
+
+        listElementRYrIIIthree.forEach((element) =>{
+            element.addEventListener('click', YrIIIRoundthree);
+        });
+
+        return()=>{
+            listElementRYrIIIthree.forEach((element) => {
+                element.removeEventListener('click', YrIIIRoundthree);
+            });
+        };
+
+     }, []);
+
 
 
     function Menu(){
@@ -532,17 +620,19 @@ function Layout( ) {
             <Grid className='Rounds_main' cursor={'pointer'} textTransform={'capitalize'} templateColumns='repeat(5, 1fr)' gap={6}>
                 <ul id='Rounds'>
                 {/* Year one */}
+                YEAR ONE
                     <GridItem w='200%' h='10' listStyleType={'none'}>
-                        <li className='Roundone'>round 1</li>
-                        <li className='Roundtwo'>round 2</li>
-                        <li className='Roundthree'>round 3</li>
-                        <li className='Roundfour'>round 4</li>
-                        <li className='Roundfive'>round 5</li>
-                        <li className='Roundsix'>round 6</li>
+                     Data and information   <li className='Roundone'>round 1</li>
+                     computer generation   <li className='Roundtwo'>round 2</li>
+                      computer memory  <li className='Roundthree'>round 3</li>
+                     communication and technology   <li className='Roundfour'>round 4</li>
+                      algorithm and binary representation  <li className='Roundfive'>round 5</li>
+                      basic computing   <li className='Roundsix'>round 6</li>
                         </GridItem>
                 </ul>
                 {/* Year two  */}
                     <GridItem className='Yrtwo' listStyleType={ 'none'} w='200%' h='10'>
+                        YEAR TWO
                         <li className='YRII_Roundone'>round 1</li>
                         <li className='YRII_Roundtwo'>round 2</li>
                         <li className='YRII_Roundthree'>round 3</li>
@@ -552,7 +642,8 @@ function Layout( ) {
                     </GridItem>
                     {/* Year Three */}
                     <GridItem listStyleType={'none'} w='200%' h='10'>
-                        <li className='YRIII-Roundone'>round 1</li>
+                        YEAR THREE
+                        <li className='YRIII_Roundone'>round 1</li>
                         <li className='YRIII_Roundtwo'>round 2</li>
                         <li className='YRIII_Roundthree'>round 3</li>
                         <li className=''>round 4</li>
