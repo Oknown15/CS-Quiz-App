@@ -30,7 +30,7 @@ function Layout( ) {
             setcurrentQuestionIndex(index);
             setCurrentQuestion(index)
             setCurrentOptions(index)
-            setCount(10)
+            setCount(20)
         }
     }
 
@@ -47,7 +47,7 @@ function Layout( ) {
     function showQuestions() {
         // showRound(false);
         RenderQuestion(true);
-        setCount(10); 
+        setCount(20); 
                 const audioMp = new Audio(audio)
                  if((!isPlaying) && (count >= 10)){
                   audioMp.play();
@@ -90,7 +90,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(0);
             setCurrentOptions(0);
-            setCount(10);
+            setCount(20);
             
 
             if(currentQuestion == 24){
@@ -121,7 +121,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(50);
             setCurrentOptions(50);
-            setCount(10);
+            setCount(20);
 
             if(currentQuestion == 74){
                 Total = (score)/25*100
@@ -153,7 +153,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(24);
             setCurrentOptions(24);
-            setCount(10);
+            setCount(20);
 
             if(currentQuestion == 50){
                 Total = (score)/25*100
@@ -183,7 +183,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(74);
             setCurrentOptions(74);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == 100){
             //     Total = (score)/25*100
@@ -212,7 +212,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(99);
             setCurrentOptions(99);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -243,7 +243,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(109);
             setCurrentOptions(109);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -272,7 +272,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(130);
             setCurrentOptions(130);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -301,7 +301,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(156);
             setCurrentOptions(156);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -331,7 +331,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(182);
             setCurrentOptions(182);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -361,7 +361,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(208);
             setCurrentOptions(208);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -391,8 +391,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(234);
             setCurrentOptions(234);
-            setCount(10);
-
+            setCount(20);
             // if(currentQuestion == ){
             //     Total = (score)/25*100
             //     showFinalResults(true);
@@ -421,7 +420,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(265);
             setCurrentOptions(265);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -450,7 +449,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(284);
             setCurrentOptions(284);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -479,7 +478,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(308);
             setCurrentOptions(308);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -509,7 +508,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(332);
             setCurrentOptions(332);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -534,6 +533,94 @@ function Layout( ) {
      }, []);
 
 
+     useEffect(() => {
+        const YrIIIRoundfour = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(356);
+            setCurrentOptions(356);
+            setCount(20);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrIIIfour= document.querySelectorAll(".YRIII_Roundfour");
+
+        listElementRYrIIIfour.forEach((element) =>{
+            element.addEventListener('click', YrIIIRoundfour);
+        });
+
+        return()=>{
+            listElementRYrIIIfour.forEach((element) => {
+                element.removeEventListener('click', YrIIIRoundfour);
+            });
+        };
+
+     }, []);
+
+     useEffect(() => {
+        const YrIIIRoundfive = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(366);
+            setCurrentOptions(366);
+            setCount(20);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrIIIfive= document.querySelectorAll(".YRIII_Roundfive");
+
+        listElementRYrIIIfive.forEach((element) =>{
+            element.addEventListener('click', YrIIIRoundfive);
+        });
+
+        return()=>{
+            listElementRYrIIIfive.forEach((element) => {
+                element.removeEventListener('click', YrIIIRoundfive);
+            });
+        };
+
+     }, []);
+
+     useEffect(() => {
+        const YrIIIRoundsix = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(386);
+            setCurrentOptions(386);
+            setCount(20);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrIIIsix= document.querySelectorAll(".YRIII_Roundsix");
+
+        listElementRYrIIIsix.forEach((element) =>{
+            element.addEventListener('click', YrIIIRoundsix);
+        });
+
+        return()=>{
+            listElementRYrIIIsix.forEach((element) => {
+                element.removeEventListener('click', YrIIIRoundsix);
+            });
+        };
+
+     }, []);
+
+
 
     function Menu(){
         RenderQuestion(false); 
@@ -547,7 +634,7 @@ function Layout( ) {
         setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length); 
         setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length);
         setSelectedAnswer(null)
-        setCount(10)
+        setCount(20)
         
     }
 
@@ -646,9 +733,9 @@ function Layout( ) {
                         <li className='YRIII_Roundone'>round 1</li>
                         <li className='YRIII_Roundtwo'>round 2</li>
                         <li className='YRIII_Roundthree'>round 3</li>
-                        <li className=''>round 4</li>
-                        <li className=''>round 5</li>
-                        <li className=''>round 6</li>
+                        <li className='YRIII_Roundfour'>round 4</li>
+                        <li className='YRIII_Roundfive'>round 5</li>
+                        <li className='YRIII_Roundsix'>round 6</li>
                     </GridItem>
                     
                     

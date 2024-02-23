@@ -3440,7 +3440,7 @@ function Question() {
 // Round4 domain questions
 //CS YEARIII
 {
-    Questions: "what does HTML  stand for?",
+    Questions: "1.what does HTML  stand for?",
     options: [
         { id: 0, text: "hyper text markup langauage", isCorrect : true },
         { id: 1, text: "high tech markup language", isCorrect : false},
@@ -3449,7 +3449,7 @@ function Question() {
     ],
 },
 {
-    Questions: "which data structure uses LIFO ordering ?",
+    Questions: "2.which data structure uses LIFO ordering ?",
     options: [
         { id: 0, text: " queue", isCorrect : false },
         { id: 1, text: " stack", isCorrect : true},
@@ -3457,9 +3457,9 @@ function Question() {
         { id: 3, text: " linked list", isCorrect: false}
     ],
 },
-//sss
+
 {
-    Questions: "which of the following is not a programming language ?",
+    Questions: "3.which of the following is not a programming language ?",
     options: [
         { id: 0, text: "python ", isCorrect : false },
         { id: 1, text: "java ", isCorrect : false},
@@ -3467,73 +3467,496 @@ function Question() {
         { id: 3, text: " API", isCorrect: true}
     ],
 },
+
 {
-    Questions: "what is the main difference between TCP and UDP  ?",
+    Questions: "4. what is the main difference between TCP and UDP  ?",
     options: [
-        { id: 0, text: " ", isCorrect : false },
-        { id: 1, text: " ", isCorrect : true},
-        {id: 2, text: " ", isCorrect : false},
+        { id: 0, text: "TCP is connection oriented , UDP is connectionless ", isCorrect : true},
+        { id: 1, text: "TCP is faster than UDP ", isCorrect : false},
+        {id: 2, text: "UDP guarantees message delivery , TCP does not  ", isCorrect : false},
         { id: 3, text: " TCP is used for video streaming UDP is used for file transfer", isCorrect: false}
     ],
 },
 {
-    Questions: "which encryption protocol is commonly used to secure wireless networks ?",
+    Questions: "5.which sorting algorithm has the best average time complexity ?",
     options: [
-        { id: 0, text: "WPA", isCorrect : true },
-        { id: 1, text: "HTTP ", isCorrect : false},
-        {id: 2, text: "FTP", isCorrect : false},
-        { id: 3, text: "SSL", isCorrect: false}
+        { id: 0, text: "bubble sorting", isCorrect : false },
+        { id: 1, text: "selection sort", isCorrect : false},
+        {id: 2, text: "insertion sort", isCorrect : false},
+        { id: 3, text: "merge sort", isCorrect: true}
     ],
 },
 {
-    Questions: "what does 'SSL' stand for ?",
+    Questions: "6.what is the binary equivalent of the decimal number 25 ?",
     options: [
-        { id: 0, text: "secure sockets layer", isCorrect : true },
-        { id: 1, text: "secure system login ", isCorrect : false},
-        {id: 2, text: "system security layer", isCorrect : false},
-        { id: 3, text: "strong security link ", isCorrect: false}
+        { id: 0, text: "11001", isCorrect : false},
+        { id: 1, text: "10011 ", isCorrect : true},
+        {id: 2, text: " 11101", isCorrect : false},
+        { id: 3, text: "10100", isCorrect: false}
     ],
 },
 {
-    Questions: "which of the following isan example of social engineering ?",
+    Questions: "7.which of the following is not a type of join in SQL ?",
     options: [
-        { id: 0, text: "brute force attack", isCorrect : false },
-        { id: 1, text: "sQL injection", isCorrect : false},
-        {id: 2, text: "phishing", isCorrect : true},
-        { id: 3, text: "cross-site scripting", isCorrect: false}
+        { id: 0, text: "INNER JOIN", isCorrect : false },
+        { id: 1, text: "OUTER JOIN", isCorrect : false},
+        {id: 2, text: "SIDE JOIN", isCorrect : true},
+        { id: 3, text: "LEFT JOIN", isCorrect: false}
     ],
 },
 
 {
-    Questions: "what is the purpose of penetration testing  ?",
+    Questions: "8.what does HTTP stand for?",
     options: [
-        { id: 0, text: "to detect vulnerabilities in a system or network", isCorrect : true },
-        { id: 1, text: "to authenticate users", isCorrect : false},
+        { id: 0, text: "hypertext transfer protocol", isCorrect : true },
+        { id: 1, text: "hypertext transmission partcipants", isCorrect : false},
+        {id: 2, text: "hyper text terminal protocol", isCorrect : false},
+        { id: 3, text: "hypertext translation protocol", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "9.what is the purpose of an index in a database?",
+    options: [
+        { id: 0, text: "to optimize queries and speed ", isCorrect : true},
+        { id: 1, text: " to store large sensitive data", isCorrect : false},
         {id: 2, text: "to encrypt sensitive data", isCorrect : false},
-        { id: 3, text: "to monitor network traffic", isCorrect: false}
+        { id: 3, text: "to enforce data integrity constraints", isCorrect: false}
     ],
 },
 
 {
-    Questions: "which of the followingis a best practice to enhance password security?",
+    Questions: "10.what data structure uses LIFO(LAST IN FIRST OUT)?",
     options: [
-        { id: 0, text: "using the same password for multiple accounts", isCorrect : false },
-        { id: 1, text: "sharing passwords with trusted colleagues", isCorrect : false},
-        {id: 2, text: "changing passwords frequently ", isCorrect : true},
-        { id: 3, text: "writing passwords down on a sticky note", isCorrect: false}
+        { id: 0, text: "tree", isCorrect : false },
+        { id: 1, text: "linked list", isCorrect : false},
+        {id: 2, text: "stack", isCorrect : true},
+        { id: 3, text: "Queue", isCorrect: false}
+    ],
+},
+
+//SE domain questions
+
+{
+    Questions: "1.which of the following programming languages is NOT statically typed?",
+    options: [
+        { id: 0, text: "python", isCorrect : true },
+        { id: 1, text: "java", isCorrect : false},
+        {id: 2, text: "c++ ", isCorrect : false},
+        { id: 3, text: "typescript ", isCorrect: false}
+    ],
+},
+{
+    Questions: "2.What is the purpose of version control systems in software development ?",
+    options: [
+        { id: 0, text: "To optimize database performance", isCorrect : false },
+        { id: 1, text: "To improve user interface design", isCorrect : false},
+        {id: 2, text: "To prevent bugs in the code", isCorrect : false},
+        { id: 3, text: " To track changes to source code over time", isCorrect: true}
     ],
 },
 
 {
-    Questions: "what is the purpose of two-factor authentication (2FA) ?",
+    Questions: "3.Which software development methodology emphasizes incremental and iterative development cycles? ?",
     options: [
-        { id: 0, text: "to use two different antivirus programs", isCorrect : false },
-        { id: 1, text: "to provide an additional layer of security beyond passwords", isCorrect : true},
-        {id: 2, text: "to encrypt network traffic", isCorrect : false},
-        { id: 3, text: "to prevent distributed denial service attacks", isCorrect: false}
+        { id: 0, text: "Waterfall", isCorrect : false },
+        { id: 1, text: " RAD (Rapid Application Development)", isCorrect : false},
+        {id: 2, text: "Spiral ", isCorrect : false},
+        { id: 3, text: " Agile", isCorrect: true}
     ],
 },
 
+{
+    Questions: "4.Which of the following is NOT a type of software testing?  ?",
+    options: [
+        { id: 0, text: "Integration testing ", isCorrect :false},
+        { id: 1, text: " Top-down testing", isCorrect : true},
+        {id: 2, text: "White-box testing  ", isCorrect : false},
+        { id: 3, text: "Black-box testing ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "5.What is the purpose of the SOLID principles in object-oriented design? ",
+    options: [
+        { id: 0, text: "To enhance code readability and maintainability", isCorrect : false },
+        { id: 1, text: "To minimize CPU usage", isCorrect : false},
+        {id: 2, text: "To increase network security", isCorrect : false},
+        { id: 3, text: "To optimize database queries", isCorrect: true}
+    ],
+},
+
+
+{
+    Questions: "6.Which programming paradigm focuses on breaking down a program into smaller, reusable pieces called functions or procedures? ",
+    options: [
+        { id: 0, text: "object-oriented programming", isCorrect : false},
+        { id: 1, text: "Functional programming ", isCorrect : false},
+        {id: 2, text: "Procedural programming", isCorrect : true},
+        { id: 3, text: "Declarative programming", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "7.What is the purpose of a UML diagram in software engineering?",
+    options: [
+        { id: 0, text: "To represent hardware components in a system", isCorrect : false },
+        { id: 1, text: "To model user interfaces", isCorrect : false},
+        {id: 2, text: " To visualize software architecture and design", isCorrect : true},
+        { id: 3, text: "To optimize code execution", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "8.Which software design pattern is used to ensure that only one instance of a class is created and provides a global point of access to that instance?",
+    options: [
+        { id: 0, text: "Singleton", isCorrect : true },
+        { id: 1, text: "Factory", isCorrect : false},
+        {id: 2, text: "Observer", isCorrect : false},
+        { id: 3, text: "Decorator", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "9.who is the father of software engineering ?",
+    options: [
+        { id: 0, text: "alan turring", isCorrect : false},
+        { id: 1, text: " charles babbage", isCorrect : false},
+        {id: 2, text: "dr winston w royce", isCorrect : true},
+        { id: 3, text: "densel washington", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "10.Which of the following is NOT a software development life cycle model? ?",
+    options: [
+        { id: 0, text: "Waterfall", isCorrect : false },
+        { id: 1, text: "Agile", isCorrect : false},
+        {id: 2, text: "V-Model", isCorrect : false},
+        { id: 3, text: "Linear", isCorrect: true}
+    ],
+},
+
+//cyber security 
+
+{
+    Questions: "1.What is phishing ?",
+    options: [
+        { id: 0, text: "A type of malware", isCorrect : false },
+        { id: 1, text: " A social engineering attack", isCorrect : true},
+        {id: 2, text: " An encryption algorithm", isCorrect : false},
+        { id: 3, text: "A hardware vulnerability ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "2.Which of the following is NOT a type of malware?",
+    options: [
+        { id: 0, text: "worm", isCorrect : false },
+        { id: 1, text: "firewall", isCorrect : true},
+        {id: 2, text: "trojan", isCorrect : false},
+        { id: 3, text: " virus", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "3.What is the primary purpose of a firewall in network security?",
+    options: [
+        { id: 0, text: "To detect and remove malware", isCorrect : false },
+        { id: 1, text: "To authenticate users ", isCorrect : false},
+        {id: 2, text: "To monitor network traffic ", isCorrect : false},
+        { id: 3, text: "To filter incoming and outgoing network traffic ", isCorrect: true}
+    ],
+},
+
+{
+    Questions: "4.Which encryption algorithm is commonly used for securing web traffic ?",
+    options: [
+        { id: 0, text: "AES ", isCorrect :true},
+        { id: 1, text: "RSA ", isCorrect : false},
+        {id: 2, text: "MD5 ", isCorrect : false},
+        { id: 3, text: " SHA-256", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " 5.What does VPN stand for ?",
+    options: [
+        { id: 0, text: "Verified Private Network ", isCorrect : false },
+        { id: 1, text: "Virtual Proxy Node", isCorrect : false},
+        {id: 2, text: " Very Personal Network", isCorrect : false},
+        { id: 3, text: "Virtual Private Network", isCorrect: true}
+    ],
+},
+
+
+
+{
+    Questions: "6. Which of the following is a strong password ?",
+    options: [
+        { id: 0, text: "password", isCorrect : false},
+        { id: 1, text: " 123456", isCorrect : false},
+        {id: 2, text: "Passw0rd", isCorrect : false},
+        { id: 3, text: "CorrectHorseBatteryStaple", isCorrect: true}
+    ],
+},
+
+
+{
+    Questions: "7.Which of the following is a common social engineering technique?",
+    options: [
+        { id: 0, text: "Firewall breach", isCorrect : false },
+        { id: 1, text: " Encryption key compromise", isCorrect : false},
+        {id: 2, text: "Phishing", isCorrect : true},
+        { id: 3, text: "DDoS attack", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "8.What is the main goal of ransomware ?",
+    options: [
+        { id: 0, text: "To steal sensitive information", isCorrect : false },
+        { id: 1, text: "To delete files from the system", isCorrect : false},
+        {id: 2, text: " To encrypt files and demand payment for decryption ", isCorrect : true},
+        { id: 3, text: "To spread across multiple networks", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "9.What does IoT stand for ?",
+    options: [
+        { id: 0, text: "Internet of Things", isCorrect : false},
+        { id: 1, text: "  Internet of Threats", isCorrect : false},
+        {id: 2, text: " Intranet of Technology", isCorrect : true},
+        { id: 3, text: "Internal Office Tools", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "10. What is the purpose of multi-factor authentication (MFA) ?",
+    options: [
+        { id: 0, text: "To use multiple firewalls", isCorrect : false },
+        { id: 1, text: "To have multiple antivirus programs", isCorrect : false},
+        {id: 2, text: "To authenticate users using multiple methods", isCorrect : true},
+        { id: 3, text: "To encrypt data with multiple algorithms", isCorrect: false}
+    ],
+},
+//current affairs
+
+{
+    
+    Questions: "1.What is the primary programming language used for developing Android applications?",
+options: [
+        { id: 0, text: "java", isCorrect : true },
+        { id: 1, text: " C++", isCorrect : false},
+        {id: 2, text: "Python", isCorrect : false},
+        { id: 3, text: " Swift", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "2. Which cloud computing platform is known for its serverless computing service    ?",
+    options: [
+        { id: 0, text: "Google Cloud Platform", isCorrect : false },
+        { id: 1, text: "IBM Cloud", isCorrect : false},
+        {id: 2, text: " Amazon Web Services", isCorrect : true},
+        { id: 3, text: "Microsoft Azure ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "3. Which programming language is commonly used for data analysis and machine learning tasks?",
+    options: [
+        { id: 0, text: "JavaScript", isCorrect : false },
+        { id: 1, text: "R", isCorrect : true},
+        {id: 2, text: " PHP", isCorrect : false},
+        { id: 3, text: "Ruby ", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "4.What does CI/CD stand for in software development?",
+    options: [
+        { id: 0, text: " Continuous Integration/Continuous Deployment", isCorrect :true},
+        { id: 1, text: "Centralized Integration/Continuous Delivery", isCorrect : false},
+        {id: 2, text: "  Continuous Improvement/Continuous Deployment", isCorrect : false},
+        { id: 3, text: "Continuous Innovation/Continuous Deployment ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "5.Which of the following is a popular version control system used in software development?",
+    options: [
+        { id: 0, text: "SVN", isCorrect : false },
+        { id: 1, text: "CVS", isCorrect : false},
+        {id: 2, text: "Git", isCorrect : true},
+        { id: 3, text: "Mercurial", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "6.Which programming language is widely used for building web applications and services?",
+    options: [
+        { id: 0, text: "Java", isCorrect : false},
+        { id: 1, text: "C# ", isCorrect : false},
+        {id: 2, text: "Python", isCorrect : true},
+        { id: 3, text: "Ruby", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "7.What is the primary purpose of Docker in software development? ",
+    options: [
+        { id: 0, text: "Containerization", isCorrect : true },
+        { id: 1, text: "Virtualization", isCorrect : false},
+        {id: 2, text: " Load Balancing", isCorrect : false},
+        { id: 3, text: "Version Control", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "8.Which database management system is known for its document-oriented approach?*",
+    options: [
+        { id: 0, text: "MySQL", isCorrect : false },
+        { id: 1, text: "PostgreSQL", isCorrect : false},
+        {id: 2, text: "MongoDB", isCorrect : true},
+        { id: 3, text: "SQLite", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "9. What is the primary function of Kubernetes in the context of container orchestration?",
+    options: [
+        { id: 0, text: "Code Deployment", isCorrect : false},
+        { id: 1, text: "Configuration Management ", isCorrect : true},
+        {id: 2, text: "Load Balancing", isCorrect : false},
+        { id: 3, text: " Container Management", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "10.Which programming language is commonly used for building native iOS applications?",
+    options: [
+        { id: 0, text: "Swift", isCorrect : true },
+        { id: 1, text: "Java", isCorrect : false},
+        {id: 2, text: "Objective-C", isCorrect : false},
+        { id: 3, text: "Kotlin", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "11.Which protocol is commonly used for secure communication over a computer network?",
+    options: [
+        { id: 0, text: "HTTP", isCorrect : false },
+        { id: 1, text: "FTP", isCorrect : false},
+        {id: 2, text: "SSH ", isCorrect : true},
+        { id: 3, text: "Telnet", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "12.What is the term for a software development approach that emphasizes short, iterative development cycles?",
+    options: [
+        { id: 0, text: "Agile", isCorrect : true },
+        { id: 1, text: "Waterfall", isCorrect : false},
+        {id: 2, text: "Spiral", isCorrect : false},
+        { id: 3, text: " Lean", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "13. Which of the following is a popular JavaScript framework for building single-page applications ?",
+    options: [
+        { id: 0, text: "React", isCorrect : true },
+        { id: 1, text: "Vue.js ", isCorrect : false},
+        {id: 2, text: "Angular ", isCorrect : false},
+        { id: 3, text: "Ember.js", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "14.Which programming language is commonly used for developing smart contracts on blockchain platforms like Ethereum?",
+    options: [
+        { id: 0, text: "Solidity", isCorrect :true},
+        { id: 1, text: " Java ", isCorrect : false},
+        {id: 2, text: " Python ", isCorrect : false},
+        { id: 3, text: " C++", isCorrect: false}
+    ],
+},
+
+
+
+{
+    Questions: " 15. What is the purpose of a VPN (Virtual Private Network) in networking?",
+    options: [
+        { id: 0, text: "Secure Remote Access ", isCorrect : true },
+        { id: 1, text: "Accelerating Internet Speed", isCorrect : false},
+        {id: 2, text: "Network Address Translation ", isCorrect : false},
+        { id: 3, text: "Load Balancing", isCorrect: false}
+    ],
+},
+
+
+{
+    Questions: "16. Which of the following is a popular NoSQL database used for real-time web applications? ",
+    options: [
+        { id: 0, text: "Cassandra", isCorrect : true},
+        { id: 1, text: " Redis ", isCorrect : false},
+        {id: 2, text: "Neo4j ", isCorrect : false},
+        { id: 3, text: " Couchbase", isCorrect: false}
+    ],
+},
+
+
+
+{
+    Questions: "17Which software development methodology advocates for self-organizing cross-functional teams?",
+    options: [
+        { id: 0, text: "Scrum ", isCorrect : true },
+        { id: 1, text: " Kanban ", isCorrect : false},
+        {id: 2, text: "Six Sigma ", isCorrect : false},
+        { id: 3, text: "Lean ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "18. What is the purpose of a CAPTCHA in web applications?",
+    options: [
+        { id: 0, text: "User Authentication", isCorrect : false },
+        { id: 1, text: "  Data Encryption", isCorrect : false},
+        {id: 2, text: " Preventing Automated Scripts ", isCorrect : true},
+        { id: 3, text: "Session Management", isCorrect: false}
+    ],
+},
+{
+    Questions: "19.Which of the following is a popular JavaScript runtime built on Chrome's V8 JavaScript engine?",
+    options: [
+        { id: 0, text: "Node.js", isCorrect : true},
+        { id: 1, text: " Deno ", isCorrect : false},
+        {id: 2, text: "express.js ", isCorrect : false},
+        { id: 3, text: "React.js", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "20.What is the primary function of a CDN (Content Delivery Network) in web hosting?",
+    options: [
+        { id: 0, text: "Database Management", isCorrect : false },
+        { id: 1, text: "Load Balancing", isCorrect : false},
+        {id: 2, text: "Content Distribution", isCorrect : true},
+        { id: 3, text: "Server Monitoring", isCorrect: false}
+    ],
+},
 
     ])
 
