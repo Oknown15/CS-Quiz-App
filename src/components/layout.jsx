@@ -12,8 +12,7 @@ function Layout( ) {
     const [FirstRound, setFirstRoundResult] = useState(false)
     const [isPlaying, setIsplaying] = useState(false);
     const [showFinalResults, setFinalResults] = useState(false);
-    const [count, setCount] = useState(10);
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [count, setCount] = useState(10);    const [currentQuestion, setCurrentQuestion] = useState(0);
     const [currentOptions, setCurrentOptions] = useState(0);
     const [showQuestion, RenderQuestion] = useState(false);
     const [score, setScore] = useState(0);
@@ -30,7 +29,7 @@ function Layout( ) {
             setcurrentQuestionIndex(index);
             setCurrentQuestion(index)
             setCurrentOptions(index)
-            setCount(10)
+            setCount(20)
         }
     }
 
@@ -90,7 +89,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(0);
             setCurrentOptions(0);
-            setCount(10);
+            setCount(20);
             
 
             if(currentQuestion == 24){
@@ -121,7 +120,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(50);
             setCurrentOptions(50);
-            setCount(10);
+            setCount(20);
 
             if(currentQuestion == 74){
                 Total = (score)/25*100
@@ -153,7 +152,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(24);
             setCurrentOptions(24);
-            setCount(10);
+            setCount(20);
 
             if(currentQuestion == 50){
                 Total = (score)/25*100
@@ -183,7 +182,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(74);
             setCurrentOptions(74);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == 100){
             //     Total = (score)/25*100
@@ -212,7 +211,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(99);
             setCurrentOptions(99);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -243,7 +242,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(109);
             setCurrentOptions(109);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -272,7 +271,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(130);
             setCurrentOptions(130);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -301,7 +300,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(156);
             setCurrentOptions(156);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -331,7 +330,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(182);
             setCurrentOptions(182);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -361,7 +360,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(208);
             setCurrentOptions(208);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -391,7 +390,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(234);
             setCurrentOptions(234);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -421,7 +420,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(265);
             setCurrentOptions(265);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -450,7 +449,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(284);
             setCurrentOptions(284);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -479,7 +478,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(308);
             setCurrentOptions(308);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -509,7 +508,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(332);
             setCurrentOptions(332);
-            setCount(10);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -547,7 +546,7 @@ function Layout( ) {
         setCurrentQuestion((prevIndex) => (prevIndex + 1) % contextValue.length); 
         setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length);
         setSelectedAnswer(null)
-        setCount(10)
+        setCount(20)
         
     }
 
@@ -590,7 +589,7 @@ function Layout( ) {
                 // setCount(10)
                 setSelectedAnswer(null)
             }
-        }, 1800);
+        }, 1500);
         return () => clearInterval(Counter);
     }, [count]);
     return (
