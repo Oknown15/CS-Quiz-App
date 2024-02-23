@@ -46,7 +46,7 @@ function Layout( ) {
     function showQuestions() {
         // showRound(false);
         RenderQuestion(true);
-        setCount(10); 
+        setCount(20); 
                 const audioMp = new Audio(audio)
                  if((!isPlaying) && (count >= 10)){
                   audioMp.play();
