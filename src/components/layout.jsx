@@ -22,6 +22,7 @@ function Layout( ) {
     const CorrectAnswer = contextValue[currentQuestion].options.isCorrect;
     const [buttonClicked, setButtonCLicked] = useState(false);
     const [currentQuestionIndex, setcurrentQuestionIndex] = useState(0)
+    const [navigations, showNavigators] = useState(false);
     const Total = [];
 
     const navigateQuestions = (index) => {
@@ -33,6 +34,15 @@ function Layout( ) {
         }
     }
 
+
+    function Navigations(){
+        showNavigators(true);
+        
+    }
+
+    function closeNavigations(){
+        showNavigators(false)
+    }
 
     function showQuestions() {
         // showRound(false);
@@ -376,7 +386,65 @@ function Layout( ) {
      }, []);
 
 
-    
+     useEffect(() => {
+        const YrIIRoundFIve = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(234);
+            setCurrentOptions(234);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrfive = document.querySelectorAll(".YRII_Roundfive");
+
+        listElementRYrfive.forEach((element) =>{
+            element.addEventListener('click', YrIIRoundFIve);
+        });
+
+        return()=>{
+            listElementRYrfive.forEach((element) => {
+                element.removeEventListener('click', YrIIRoundFIve);
+            });
+        };
+
+     }, []);
+
+
+     useEffect(() => {
+        const YrIIRoundFSix = (event) => {
+            RenderQuestion(true)
+            setCurrentQuestion(265);
+            setCurrentOptions(265);
+            setCount(10);
+
+            // if(currentQuestion == ){
+            //     Total = (score)/25*100
+            //     showFinalResults(true);
+            //     RenderQuestion(false);
+            //     setFirstRoundResult(true);
+
+            // }
+        };
+        const listElementRYrsix = document.querySelectorAll(".YRII_Roundsix");
+
+        listElementRYrsix.forEach((element) =>{
+            element.addEventListener('click', YrIIRoundFSix);
+        });
+
+        return()=>{
+            listElementRYrsix.forEach((element) => {
+                element.removeEventListener('click', YrIIRoundFSix);
+            });
+        };
+
+     }, []);
+
 
 
     function Menu(){
@@ -459,7 +527,6 @@ function Layout( ) {
               <div style={{textTransform: 'capitalize', position: 'absolute',top: '100px', right: '0'}}>
                     <Button  className='btn-main' pos={'absolute'} bottom={0} mt={15} right={5}>result</Button>
                 </div>
-
               <div>
                 <Center>
             <Grid className='Rounds_main' cursor={'pointer'} textTransform={'capitalize'} templateColumns='repeat(5, 1fr)' gap={6}>
@@ -480,14 +547,14 @@ function Layout( ) {
                         <li className='YRII_Roundtwo'>round 2</li>
                         <li className='YRII_Roundthree'>round 3</li>
                         <li className='YRII_Roundfour'>round 4</li>
-                        <li className=''>round 5</li>
-                        <li className=''>round 6</li>
+                        <li className='YRII_Roundfive'>round 5</li>
+                        <li className='YRII_Roundsix'>round 6</li>
                     </GridItem>
                     {/* Year Three */}
                     <GridItem listStyleType={'none'} w='200%' h='10'>
-                        <li className=''>round 1</li>
-                        <li className=''>round 2</li>
-                        <li className=''>round 3</li>
+                        <li className='YRIII-Roundone'>round 1</li>
+                        <li className='YRIII_Roundtwo'>round 2</li>
+                        <li className='YRIII_Roundthree'>round 3</li>
                         <li className=''>round 4</li>
                         <li className=''>round 5</li>
                         <li className=''>round 6</li>
@@ -531,19 +598,29 @@ function Layout( ) {
                      <p>Question {currentQuestion}/100</p>
                </Box>
             <Button pos={'absolute'} right={5} bottom={0} textTransform={'capitalize'} onClick={() => NextQuestion(event)}>next</Button>
-
-               <div className='text'>
-                    {contextValue.map((contextValue, index) => (
-                        <button style={{padding: '10px'}} key={index} onClick={() => navigateQuestions(index)}>{index + 1}</button>
-                    ))}    
+            <Button textTransform={'capitalize'} onClick={() => Navigations()}>navigators</Button>
+            <Button m={10} onClick={() => closeNavigations()}>x</Button>
                </div>
-               </div>
+               
                ) : (
         <div className='record'>
             <p>Score so far : {score}/ </p> 
             <p>{(score/130 ) * 100}%</p>
         </div>
-        )}
+        ) 
+        }
+
+        {
+            navigations == true ? (
+                <div className='text'>
+                    {contextValue.map((contextValue, index) => (
+                        <button style={{padding: '10px'}} key={index} onClick={() => navigateQuestions(index)}>{index + 1}</button>
+                    ))}    
+               </div>
+            ) :(
+                <div></div>
+            )
+        }
         </div>
         
     );

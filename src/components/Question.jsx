@@ -8,12 +8,12 @@ function Question() {
     const [myArray, setMyArray] = useState([
         //computer science 100level
         {
-            Questions: "The followings are disadvantages of using the computer except",
+            Questions: "what is data ?",
             options: [
-                { id: 0, text: "unemployment", isCorrect : false },
-                { id: 1, text: "loss of privacy", isCorrect : false},
-                {id: 2, text: "identity theft", isCorrect : false},
-                { id: 3, text: "online trading", isCorrect: true}
+                { id: 0, text: "processed information", isCorrect : false },
+                { id: 1, text: "raw facts and figures", isCorrect : true},
+                {id: 2, text: "interpreted insights", isCorrect : false},
+                { id: 3, text: "none of the above", isCorrect: false}
             ],
         },
         {
@@ -26,12 +26,12 @@ function Question() {
             ],
         },
         {
-            Questions: "Each instruction in procedural program is executed in _____________",
+            Questions: "which of the following is an example of qualitative data?",
             options: [
-                { id: 0, text: "ordered format", isCorrect : true },
-                { id: 1, text: "sampling", isCorrect : false},
-                {id: 2, text: "changeable format", isCorrect : false},
-                { id: 3, text: "random format", isCorrect: false}
+                { id: 0, text: "temperature in degrees celcuis", isCorrect : false },
+                { id: 1, text: "height of a building in meters", isCorrect : false},
+                {id: 2, text: "customer satisaction rating", isCorrect : true},
+                { id: 3, text: "weight of an object in kilograms", isCorrect: false}
             ],
         },
         {
@@ -44,30 +44,30 @@ function Question() {
             ],
         },
         {
-            Questions: "Which programming language is useful in programming Robotics and Artificial intelligence?",
+            Questions: "what is the process of organizing and arranging data in a meaningful manner called ?",
             options: [
-                { id: 0, text: "BASIC", isCorrect : false },
-                { id: 1, text: "python", isCorrect : true},
-                {id: 2, text: "fortran", isCorrect : false},
-                { id: 3, text: "C++", isCorrect: false}
+                { id: 0, text: "data formatting", isCorrect : false },
+                { id: 1, text: "data aggregation", isCorrect : true},
+                {id: 2, text: "data visualization", isCorrect : false},
+                { id: 3, text: "data analysis", isCorrect: false}
             ],
         },
         {
-            Questions: "every web page has a unique address called a ____",
+            Questions: "which term refers to data that has been processed, organized, and presented ina meaningful context?",
             options: [
-                { id: 0, text: "URN", isCorrect : false },
-                { id: 1, text: "ARN", isCorrect : false},
-                {id: 2, text: "URL", isCorrect : true},
-                { id: 3, text: "USB", isCorrect: false}
+                { id: 0, text: "spreadsheet", isCorrect : false },
+                { id: 1, text: "database", isCorrect : false},
+                {id: 2, text: "algorithm", isCorrect : false},
+                { id: 3, text: "information", isCorrect: true}
             ],
         },
         {
-            Questions: "the part of a program that can be coded and tested seperately is usually called ____________?",
+            Questions: "what is the primary purpose of data normalization?",
             options: [
-                { id: 0, text: "instruction", isCorrect : false },
-                { id: 1, text: "module", isCorrect : true},
-                {id: 2, text: "declaration", isCorrect : false},
-                { id: 3, text: "loop", isCorrect: false}
+                { id: 0, text: "to make data visually appealing", isCorrect : false },
+                { id: 1, text: "to reduce redundancy and improve efficiency", isCorrect : true},
+                {id: 2, text: "to encrypt sensitive information", isCorrect : false},
+                { id: 3, text: "to perform statistical analysis and improve efficiency", isCorrect: false}
             ],
         },
 
@@ -82,53 +82,216 @@ function Question() {
         },
 
         {
-            Questions: "The light pen is an example of _______ device ",
+            Questions: "in which stage of the data processing cycle is data input intoa computer system?",
             options: [
-                { id: 0, text: "input", isCorrect : true },
-                { id: 1, text: "output", isCorrect : false},
-                {id: 2, text: "storage", isCorrect : false},
-                { id: 3, text: "digital", isCorrect: false}
+                { id: 0, text: "storage", isCorrect : false},
+                { id: 1, text: "processing", isCorrect : false},
+                {id: 2, text: "input", isCorrect : true},
+                { id: 3, text: "output", isCorrect: false}
             ],
         },
 
         {
-            Questions: " The Automated Teller Machine is classified as a  _________ ",
+            Questions: " what is the process of converting data into a format suitable for storage or transmission?",
             options: [
-                { id: 0, text: "general purpose computer ", isCorrect : false },
-                { id: 1, text: "special purpose computer", isCorrect : true},
-                {id: 2, text: "super computer", isCorrect : false},
-                { id: 3, text: "micro computer", isCorrect: false}
+                { id: 0, text: "data analysis", isCorrect : false },
+                { id: 1, text: "data processing", isCorrect : false},
+                {id: 2, text: "data encoding", isCorrect : false},
+                { id: 3, text: "data encoding", isCorrect: true}
             ],
         },
 
         {
-            Questions: "  Scope of data and information revolves round the concept of …………………………",
+            Questions: "which of the following is NOT a characteristics of big data?",
             options: [
-                { id: 0, text: "characters", isCorrect : true },
-                { id: 1, text: "charater sets", isCorrect : false},
-                {id: 2, text: "information ", isCorrect : false},
-                { id: 3, text: "strings", isCorrect: false}
+                { id: 0, text: "volume", isCorrect : false },
+                { id: 1, text: "velocity", isCorrect : false},
+                {id: 2, text: "variety ", isCorrect : false},
+                { id: 3, text: "validity", isCorrect: true}
             ],
         },
 
         {
-            Questions: " Second generation computers are characterized by …………….……… as their major hardware.",
+            Questions: "which data storage technology stores data in a distributed and repplicated manner across multiple servers?",
             options: [
-                { id: 0, text: "interpreters", isCorrect : false },
-                { id: 1, text: "compilers", isCorrect : false},
-                {id: 2, text: "palmtops", isCorrect : false},
-                { id: 3, text: "transistors", isCorrect: true}
+                { id: 0, text: "data warehouse", isCorrect : false },
+                { id: 1, text: "distribute database", isCorrect : true},
+                {id: 2, text: "noSQL database", isCorrect : false},
+                { id: 3, text: "relational database", isCorrect: false}
                 
             ],
         },
 
         {
-            Questions: "  A nibble comprises of…………………….………. number of bits. ?",
+            Questions: "what is the process of identifying and correcting errors in data called?",
             options: [
-                { id: 0, text: "8", isCorrect : false },
-                { id: 1, text: "3", isCorrect : false},
-                {id: 2, text: "4", isCorrect : true},
+                { id: 0, text: "data mining", isCorrect : false },
+                { id: 1, text: "data validation", isCorrect : false},
+                {id: 2, text: "data cleansing", isCorrect : true},
                 { id: 3, text: "none of the above", isCorrect: false}
+            ],
+        },
+        {
+            Questions: "which of the following is an example of structured data?",
+            options: [
+                { id: 0, text: "social media post ", isCorrect : false },
+                { id: 1, text: "email messages", isCorrect : false},
+                {id: 2, text: "spreadsheet", isCorrect : true},
+                { id: 3, text: "digital photographs", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "which of the following is NOT a data visualization technique?",
+            options: [
+                { id: 0, text: "bar chart", isCorrect : false },
+                { id: 1, text: "histogram", isCorrect : false},
+                {id: 2, text: "scatter plot", isCorrect : false},
+                { id: 3, text: "SQL query", isCorrect: true}
+            ],
+        },
+        {
+            Questions: "which data analysis technique is used to uncover hidden patterns,correlations and trends in large datasets ?",
+            options: [
+                { id: 0, text: "data mining", isCorrect : true },
+                { id: 1, text: "data validation", isCorrect : false},
+                {id: 2, text: "data normalization", isCorrect : false},
+                { id: 3, text: "data encoding", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "which term refers to the reliability and trustworthiness of data?",
+            options: [
+                { id: 0, text: "data integrity", isCorrect : true },
+                { id: 1, text: "data security", isCorrect : false},
+                {id: 2, text: "data redudancy", isCorrect : false},
+                { id: 3, text: "data consistency", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "what is difference between  data and information?",
+            options: [
+                { id: 0, text: "information is static, while data is dynamic", isCorrect : false},
+                { id: 1, text: "information is processed data with context", isCorrect : true},
+                {id: 2, text: "data is processed, while information is raw", isCorrect : false},
+                { id: 3, text: "data is always accurate while information may contain errors", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "what is the purpose of data validation in databases ?",
+            options: [
+                { id: 0, text: "speed up data retrieval", isCorrect : false },
+                { id: 1, text: "ensure data consistency", isCorrect : true},
+                {id: 2, text: "improve data compression", isCorrect : false},
+                { id: 3, text: "ensure data visualization", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "what is the purpose of a data dictionary?",
+            options: [
+                { id: 0, text: "store data records", isCorrect : false },
+                { id: 1, text: "define data elements and their relationships", isCorrect : true},
+                {id: 2, text: "secure data transmission", isCorrect : false},
+                { id: 3, text: "create data backups", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "what is the plural of data?",
+            options: [
+                { id: 0, text: "datum", isCorrect : false},
+                { id: 1, text: "daton", isCorrect : false},
+                {id: 2, text: "data", isCorrect : true},
+                { id: 3, text: "datas", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "where is the word 'data' from?",
+            options: [
+                { id: 0, text: "latin", isCorrect : true },
+                { id: 1, text: "spanish", isCorrect : false},
+                {id: 2, text: "greek", isCorrect : false},
+                { id: 3, text: "none of the above", isCorrect: false}
+            ],
+        },
+        
+        {
+            Questions: "which of the following is NOT a charcacteristic of meaningful information?",
+            options: [
+                { id: 0, text: "accuracy", isCorrect : false },
+                { id: 1, text: "timeliness", isCorrect : false},
+                {id: 2, text: "completeness", isCorrect : false},
+                { id: 3, text: "randomness", isCorrect: true}
+            ],
+        },
+
+        {
+            Questions: "in the context of decision-making, what role does information play?",
+            options: [
+                { id: 0, text: "information is irrelevant for decision making", isCorrect : false},
+                { id: 1, text: "information supports informed decision making", isCorrect : true},
+                {id: 2, text: "information complicates decision making", isCorrect : false},
+                { id: 3, text: "information delays decision making", isCorrect: false}
+            ],
+        },
+//computer memory questions YEARONE
+        {
+            Questions: "what is the primary function of computer memory ?",
+            options: [
+                { id: 0, text: "store data temporarily", isCorrect : true },
+                { id: 1, text: "execute instructions", isCorrect : false},
+                {id: 2, text: "perform calculations", isCorrect : false},
+                { id: 3, text: "control input/output operations", isCorrect: false}
+            ],
+        },
+        {
+            Questions: "which of the following is a type of volatile memory?",
+            options: [
+                { id: 0, text: "hard disk", isCorrect : false},
+                { id: 1, text: "cache memory", isCorrect : false},
+                {id: 2, text: "RAM", isCorrect : true},
+                { id: 3, text: "ROM", isCorrect: false}
+            ],
+        },
+        {
+            Questions: "what does RAM stand for?",
+            options: [
+                { id: 0, text: "run-acess memory", isCorrect : false },
+                { id: 1, text: "read-write memory", isCorrect : false},
+                {id: 2, text: "random access memory", isCorrect : true},
+                { id: 3, text: "read-only memory", isCorrect: false}
+            ],
+        },
+        {
+            Questions: "which memory type retains data even when the power is turned off?",
+            options: [
+                { id: 0, text: "RAM", isCorrect : false },
+                { id: 1, text: "ROM", isCorrect : true},
+                {id: 2, text: "cache memory", isCorrect : false},
+                { id: 3, text: "virtual memory", isCorrect: false}
+            ],
+        },
+        {
+            Questions: "what does ROM stand for?.",
+            options: [
+                { id: 0, text: "run-only memory", isCorrect : false },
+                { id: 1, text: "random output memory", isCorrect : false},
+                {id: 2, text: "read-output memory", isCorrect : false},
+                { id: 3, text: "read-only memory", isCorrect: true}
+            ],
+        },
+        {
+            Questions: "which memory type is used to store BIOS settings?",
+            options: [
+                { id: 0, text: "virtual memory", isCorrect : false },
+                { id: 1, text: "cache memory", isCorrect : false},
+                {id: 2, text: "ROM", isCorrect : true},
+                { id: 3, text: "RAM", isCorrect: false}
             ],
         },
         {
@@ -139,386 +302,226 @@ function Question() {
                 {id: 2, text: "flash drive", isCorrect : false},
                 { id: 3, text: "ROM", isCorrect: false}
             ],
-        },
 
-        {
-            Questions: " Technological advancement of computer is measured in …………………………?",
-            options: [
-                { id: 0, text: "implementation", isCorrect : false },
-                { id: 1, text: "Grit", isCorrect : false},
-                {id: 2, text: "generation", isCorrect : true},
-                { id: 3, text: "none of the above", isCorrect: false}
-            ],
         },
         {
-            Questions: "  The 4th generation computers used ……………………… as their major hardware component ?",
+            Questions: "which memory type is fastest among these ?",
             options: [
-                { id: 0, text: "transitors", isCorrect : false },
-                { id: 1, text: "microprocessors", isCorrect : true},
-                {id: 2, text: "the analytical engine", isCorrect : false},
-                { id: 3, text: "abacus", isCorrect: false}
+                { id: 0, text: "ROM", isCorrect : false },
+                { id: 1, text: "cache memory", isCorrect : true},
+                {id: 2, text: "RAM", isCorrect : false},
+                { id: 3, text: "hard disk", isCorrect: true}
             ],
         },
 
         {
-            Questions: "  The LSI, MSI and VLSI are of the …………………………………………… generation?",
+            Questions: "which of the following is a characteristics of ROM ?",
             options: [
-                { id: 0, text: "5th", isCorrect : false },
-                { id: 1, text: "3rd", isCorrect : false},
-                {id: 2, text: "4th", isCorrect : true},
-                { id: 3, text: "1st", isCorrect: false}
+                { id: 0, text: " volatile", isCorrect : false },
+                { id: 1, text: "read-write ", isCorrect : false},
+                {id: 2, text: "non-volatile", isCorrect : true},
+                { id: 3, text: "slow acess speed ", isCorrect: false}
             ],
         },
 
         {
-            Questions: " Give the full meaning of BCD ………………………?",
+            Questions: "the term 'volatile' in computer memory means?" ,
             options: [
-                { id: 0, text: "binary coded decimal", isCorrect : true},
-                { id: 1, text: "binary coding dynasty", isCorrect : false},
-                {id: 2, text: "binary coding decimal", isCorrect : false},
-                { id: 3, text: "binary coded decimals", isCorrect: false}
-            ],
-        },
-
-        {
-            Questions: "	The output unit coverts the data entered by the user into computer understandable form.?",
-            options: [
-                { id: 0, text: "thrid generation", isCorrect : false },
-                { id: 1, text: "3rd gen.", isCorrect : true},
-                {id: 2, text: "4th gen.", isCorrect : false},
-                { id: 3, text: "2nd gen.", isCorrect: false}
-            ],
-        },
-
-        {
-            Questions: "	What is the device that allows you dial long distance calls automatically without the service of human operator ?",
-            options: [
-                { id: 0, text: "CPU", isCorrect : false },
-                { id: 1, text: "transistors", isCorrect : false},
-                {id: 2, text: "computers", isCorrect : true},
-                { id: 3, text: "RAM", isCorrect: false}
-            ],
-        },
-
-        {
-            Questions: "On a large scale, _______ process and maintain record every driver ?",
-            options: [
-                { id: 0, text: "computers", isCorrect : true },
-                { id: 1, text: "telecommunication", isCorrect : false},
-                {id: 2, text: "satelite", isCorrect : false},
-                { id: 3, text: "business", isCorrect: false}
-            ],
-        },
-
-        {
-            Questions: " The connectivity of two or more computers that enables for peripherals and information sharing is called ..........?",
-            options: [
-                { id: 0, text: "starlink WIFI", isCorrect : false },
-                { id: 1, text: "satelite", isCorrect : false},
-                {id: 2, text: "network", isCorrect : true},
-                { id: 3, text: "interconnection", isCorrect: false}
-            ],
-        },
-        
-        {
-            Questions: " The air conditioning and heating in many homes is controlled by __________?",
-            options: [
-                { id: 0, text: "ctrl unit", isCorrect : false },
-                { id: 1, text: "computer", isCorrect : false},
-                {id: 2, text: "microprocessor", isCorrect : true},
-                { id: 3, text: "cache memory", isCorrect: false}
-            ],
-        },
-
-        {
-            Questions: "Computers are widely used for the creation, manipulation and ________ of documents ?",
-            options: [
-                { id: 0, text: "storage", isCorrect : true},
-                { id: 1, text: "process", isCorrect : false},
-                {id: 2, text: "back-ups", isCorrect : false},
-                { id: 3, text: "safe keeping", isCorrect: false}
-            ],
-        },
-//cyber security
-        {
-            Questions: " What is the primary goal of ethical behavior in cybersecurity?",
-            options: [
-                { id: 0, text: "Financial gain", isCorrect : false },
-                { id: 1, text: "Protecting personal interests", isCorrect : false},
-                {id: 2, text: "Safeguarding the integrity and confidentiality of information", isCorrect : true},
-                { id: 3, text: "Gaining unauthorized access to systems", isCorrect: false}
-            ],
-        },
-        {
-            Questions: " What ethical principle involves being honest and truthful in all professional interactions?",
-            options: [
-                { id: 0, text: "honesty", isCorrect : true},
-                { id: 1, text: "intergrity", isCorrect : false},
-                {id: 2, text: "trustworthiness", isCorrect : false},
-                { id: 3, text: "accountability", isCorrect: false}
-            ],
-        },
-        {
-            Questions: " In the context of cybersecurity ethics, what is the responsibility of professionals when facing a conflict of interest?",
-            options: [
-                { id: 0, text: "Engaging in unauthorized use of intellectual property", isCorrect : false },
-                { id: 1, text: "Respecting the rights and ownership of intellectual property", isCorrect : true},
-                {id: 2, text: "Ignoring the impact of intellectual property theft", isCorrect : false},
-                { id: 3, text: "Concealing the use of intellectual property", isCorrect: false}
-            ],
-        },
-        {
-            Questions: " In the context of cybersecurity ethics, what is the responsibility of professionals regarding the use of open-source tools and software?",
-            options: [
-                { id: 0, text: "Promoting the unauthorized use of open-source tools", isCorrect : false },
-                { id: 1, text: "Ignoring the use of open-source tools in favor of proprietary solutions", isCorrect : false},
-                {id: 2, text: "Respecting the licensing terms and attributions of open-source tools", isCorrect : true},
-                { id: 3, text: "Concealing the use of open-source tools", isCorrect: false}
-            ],
-        },
-        {
-            Questions: " What is the significance of the 'golden rule' in cybersecurity ethics?.",
-            options: [
-                { id: 0, text: "Prioritizing personal interests over others", isCorrect : false },
-                { id: 1, text: "Treating others as one would like to be treated", isCorrect : true},
-                {id: 2, text: "Ignoring the impact of actions on others", isCorrect : false},
-                { id: 3, text: "Engaging in unethical practices", isCorrect: false}
-            ],
-        },
-        {
-            Questions: " In the context of cybersecurity ethics, what does 'whistleblowing' refer to?",
-            options: [
-                { id: 0, text: "Engaging in unethical practices", isCorrect : false },
-                { id: 1, text: "Reporting security vulnerabilities anonymously", isCorrect : false},
-                {id: 2, text: "Disclosing unethical behavior or wrongdoing within an organization", isCorrect : true},
-                { id: 3, text: "Ignoring the responsibility to report security incidents", isCorrect: false}
-            ],
-        },
-        {
-            Questions: "  In the context of cybersecurity ethics, what does 'informed consent' involve?",
-            options: [
-                { id: 0, text: "Engaging in activities without consent", isCorrect : false },
-                { id: 1, text: "Obtaining permission from stakeholders before taking actions", isCorrect : true},
-                {id: 2, text: "Ignoring the impact of actions on stakeholders", isCorrect : false},
-                { id: 3, text: "concealing information from stakeholders", isCorrect: false}
-            ],
-        },
-        {
-            Questions: "What ethical principle involves avoiding actions that may harm the reputation of the cybersecurity profession?",
-            options: [
-                { id: 0, text: "Responsibility", isCorrect : false },
-                { id: 1, text: "integrity", isCorrect : false},
-                {id: 2, text: "trustworthiness", isCorrect : false},
-                { id: 3, text: "Ethical leadership", isCorrect: true}
-            ],
-        },
-
-        {
-            Questions: " Which of these describes an ongoing pursuit by an individual/group ?",
-            options: [
-                { id: 0, text: "Stalking ", isCorrect : true },
-                { id: 1, text: "Identity theft ", isCorrect : false},
-                {id: 2, text: "phishing", isCorrect : false},
-                { id: 3, text: "Bulling ", isCorrect: false}
-            ],
-        },
-
-        {
-            Questions: " Which one of the following is considered in the category of computer threats? ?" ,
-            options: [
-                { id: 0, text: "Soliciting ", isCorrect : false },
-                { id: 1, text: "DoS attack ", isCorrect : true},
-                {id: 2, text: "Phishing ", isCorrect : false},
+                { id: 0, text: "memory that retains data even when power is turned off ", isCorrect : false },
+                { id: 1, text: "memory that loses data when power is turned off ", isCorrect : true},
+                {id: 2, text: "memory that stores data temporarily ", isCorrect : false},
                 { id: 3, text: "Both A and B ", isCorrect: false}
             ],
         },
 
         {
-            Questions: " Which one is considered to be a type of antivirus program? ",
+            Questions: "what is the primary storage of the operating system? ",
             options: [
-                { id: 0, text: "Kaspersky  ", isCorrect : false },
-                { id: 1, text: "Mcafee", isCorrect : false},
-                {id: 2, text: " Quick heal ", isCorrect : false},
-                { id: 3, text: " All of the above ", isCorrect: true}
-            ],
-        },
-
-        {
-            Questions: "Which of the following typically keeps tabs on every online activity the victim engages in, compiles all the data in the background, and sends it to a third party? ",
-            options: [
-                { id: 0, text: "Adware ", isCorrect : false },
-                { id: 1, text: "Malware ", isCorrect : false},
-                {id: 2, text: " Spyware ", isCorrect : true},
+                { id: 0, text: "cache memory  ", isCorrect : false },
+                { id: 1, text: "secondary storage", isCorrect : false},
+                {id: 2, text: " RAM  ", isCorrect : true},
                 { id: 3, text: " All of the above ", isCorrect: false}
             ],
         },
 
         {
-            Questions: " Which of these scanners for ports and IP addresses is most used by users? ",
+            Questions: "what is ROM used for ? ",
             options: [
-                { id: 0, text: " Cain and Abel ", isCorrect : false },
-                { id: 1, text: "Ettercap ", isCorrect : false},
-                {id: 2, text: "Snort ", isCorrect : false},
-                { id: 3, text: " Angry IP Scanner ", isCorrect: true}
+                { id: 0, text: "storing data temporarily ", isCorrect : false },
+                { id: 1, text: "storing frequently accessed data ", isCorrect : false},
+                {id: 2, text: " storing the BIOS setting ", isCorrect : true},
+                { id: 3, text: " All of the above ", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "what is the purpose of RAM ? ",
+            options: [
+                { id: 0, text: " to execute instructions ", isCorrect : false },
+                { id: 1, text: "to store data and instructions temporarily ", isCorrect : true},
+                {id: 2, text: "to store data permanently ", isCorrect : false},
+                { id: 3, text: " Angry IP Scanner ", isCorrect: false}
                 
             ],
         },
 
         {
-            Questions: " Which of the following describes investigating moral conduct concerning the digital media landscape? ?",
+            Questions: "which memory keeps its data even when the computer is turned off ?",
             options: [
-                { id: 0, text: "Cyberethics ", isCorrect : true },
-                { id: 1, text: " Cyber low ", isCorrect : false},
-                {id: 2, text: "Cybersafety ", isCorrect : false},
-                { id: 3, text: "Cybersecurity ", isCorrect: false}
+                { id: 0, text: "RAM ", isCorrect : false },
+                { id: 1, text: "ROM ", isCorrect : true},
+                {id: 2, text: "cache memory ", isCorrect : false},
+                { id: 3, text: "hard disk ", isCorrect: false}
             ],
         },
         {
-            Questions: "  whether True or False: Data encryption is used to ensure confidentiality?",
+            Questions: "which is not a type or computer memory ?",
             options: [
-                { id: 0, text: "true ", isCorrect : true },
-                { id: 1, text: "false", isCorrect : false},
-                {id: 2, text: " It cannot be understood ", isCorrect : false},
-                { id: 3, text: "None  of the above", isCorrect: false}
-            ],
-        },
-
-        {
-            Questions: " Determine the earliest method of free phone calls used by hackers.? ",
-            options: [
-                { id: 0, text: "Cracking ", isCorrect : false },
-                { id: 1, text: "Spamming ", isCorrect : false},
-                {id: 2, text: "Phreaking ", isCorrect : true},
-                { id: 3, text: "Phishing ", isCorrect: false}
-            ],
-        },
-        {
-            Questions: " Which of these methods is used to check the validity of a message? ",
-            options: [
-                { id: 0, text: "Protocol ", isCorrect : false },
-                { id: 1, text: "digital signature", isCorrect : false},
-                {id: 2, text: "message digest", isCorrect : true},
-                { id: 3, text: "decryption algorithm", isCorrect: false}
+                { id: 0, text: "RAM ", isCorrect : false },
+                { id: 1, text: "SSD", isCorrect : false},
+                {id: 2, text: " ROM ", isCorrect : false},
+                { id: 3, text: "keyboard", isCorrect: true}
             ],
         },
 
         {
-            Questions: " Which of the following is typically used when hacking Wi-Fi? ",
+            Questions: "what does ROM store?",
             options: [
-                { id: 0, text: "Wireshark ", isCorrect : false },
-                { id: 1, text: "Aircrack-ng ", isCorrect : true},
-                {id: 2, text: "Norton ", isCorrect : false},
+                { id: 0, text: "operating system ", isCorrect : false },
+                { id: 1, text: "data temporarily ", isCorrect : false},
+                {id: 2, text: "bIOS settings ", isCorrect : true},
+                { id: 3, text: " programs", isCorrect: false}
+            ],
+        },
+        {
+            Questions: "what memory type increases physical memory ? ",
+            options: [
+                { id: 0, text: "virtual memory ", isCorrect : false },
+                { id: 1, text: "ROM", isCorrect : false},
+                {id: 2, text: "virtual memory", isCorrect : true},
+                { id: 3, text: "cache memory", isCorrect: false}
+            ],
+        },
+
+        {
+            Questions: "what type of memory is used to store data and instructions currently processed bbyt the CPU? ",
+            options: [
+                { id: 0, text: "cache memory ", isCorrect : false },
+                { id: 1, text: " ROM", isCorrect : false},
+                {id: 2, text: "RAM ", isCorrect : true},
                 { id: 3, text: "all of the above", isCorrect: false}
             ],
         },
 
         {
-            Questions: " The Code Red is similar to a: ",
+            Questions: "the following are types of ROM except ?",
             options: [
-                { id: 0, text: "Photo Editing Software ", isCorrect : false},
-                { id: 1, text: "Antivirus Program ", isCorrect : false},
-                {id: 2, text: "Video Editing Software ", isCorrect : false},
-                { id: 3, text: "Computer Virus ", isCorrect: true}
+                { id: 0, text: "i dont know", isCorrect : false},
+                { id: 1, text: "PROME", isCorrect : true},
+                {id: 2, text: " EPROM", isCorrect : false},
+                { id: 3, text: "EEPROM ", isCorrect: false}
             ],
         },
 
         {
-            Questions: " Which of these was the first antivirus software ever created? ",
+            Questions: "what is the main difference between ROM and RAM ? ",
             options: [
-                { id: 0, text: "Reaper ", isCorrect : true },
-                { id: 1, text: "Ray Tomlinson", isCorrect : false},
-                {id: 2, text: "Creeper", isCorrect : false},
-                { id: 3, text: "Tinkered ", isCorrect: false}
+                { id: 0, text: "RAM is volatile, ROM is non-volatile", isCorrect : true },
+                { id: 1, text: "RAM is non-volatile,ROM is volatile", isCorrect : false},
+                {id: 2, text: "RAM is slow, ROM is fast", isCorrect : false},
+                { id: 3, text: "RAM is for storage ROM is for processing ", isCorrect: false}
             ],
         },
 
         {
-            Questions: " The DNS would convert any domain name into: ?",
+            Questions: "computer memory are divided into ____ types ?",
             options: [
-                { id: 0, text: "Hex ", isCorrect : false },
-                { id: 1, text: "Binary ", isCorrect : false},
-                {id: 2, text: "URL", isCorrect : true},
-                { id: 3, text: "IP", isCorrect: false}
+                { id: 0, text: "4 ", isCorrect : false },
+                { id: 1, text: "3 ", isCorrect : false},
+                {id: 2, text: "2", isCorrect : true},
+                { id: 3, text: "6", isCorrect: false}
             ],
         },
 
         {
-            Questions: " The most important step in system hacking is: _____",
+            Questions: "which is faster between a RAM or a hard drive ?",
             options: [
-                { id: 0, text: "Cracking passwords ", isCorrect : true },
-                { id: 1, text: "Covering tracks ", isCorrect : false},
-                {id: 2, text: "Information gathering ", isCorrect : false},
-                { id: 3, text: "None of the above ", isCorrect: false}
+                { id: 0, text: "none of them", isCorrect : false },
+                { id: 1, text: "RAM ", isCorrect : true},
+                {id: 2, text: "flash drive ", isCorrect : false},
+                { id: 3, text: "hard drive ", isCorrect: false}
             ],
         },
 
         {
-            Questions: " Pick one of the following methods for hiding information inside a picture",
+            Questions: "is flash drive a primary memory or secondary memory ?",
             options: [
-                { id: 0, text: "Image Rendering ", isCorrect : false },
-                { id: 1, text: "Steganography ", isCorrect : true},
-                {id: 2, text: "Rootkits ", isCorrect : false},
-                { id: 3, text: "bitmapping", isCorrect: false}
+                { id: 0, text: "can't say", isCorrect : false },
+                { id: 1, text: "false ", isCorrect : false},
+                { id: 3, text: "true", isCorrect: true}
             ],
         },
         
         {
-            Questions: "	Junk e-mail is also called",
+            Questions: "what memory is faster but smaller in size?",
             options: [
-                { id: 0, text: "spam", isCorrect : true },
-                { id: 1, text: "spoof", isCorrect : false},
-                {id: 2, text: "sniffer script", isCorrect : false},
-                { id: 3, text: "spool", isCorrect: false}
+                { id: 0, text: "RAM", isCorrect : false},
+                { id: 1, text: "hard drive", isCorrect : false},
+                {id: 2, text: "SSD", isCorrect : false},
+                { id: 3, text: "cache", isCorrect: true}
             ],
         },
 
         {
-            Questions: "	Back up of the data files will help to prevent .",
+            Questions: "what term refers to the location of data within memory?",
             options: [
-                { id: 0, text: "loss of confidentiality", isCorrect : false },
-                { id: 1, text: "duplication of data", isCorrect : false},
-                {id: 2, text: "virus infection", isCorrect : false},
-                { id: 3, text: "loss of data", isCorrect: true}
+                { id: 0, text: "register", isCorrect : false },
+                { id: 1, text: "memory address", isCorrect : true},
+                {id: 2, text: "byte", isCorrect : false},
+                { id: 3, text: "bit", isCorrect: false}
             ],
         },
 
         {
-            Questions: " What ethical principle involves the responsibility to report security vulnerabilities to appropriate parties?",
+            Questions: "what type of memory is volatile, meaning it loses its data when power is off?",
             options: [
-                { id: 0, text: "Integrity", isCorrect : false },
-                { id: 1, text: "Confidentiality", isCorrect : false},
-                {id: 2, text: "Responsibility", isCorrect : true},
-                { id: 3, text: "Accountability", isCorrect: false}
+                { id: 0, text: "solid state drive", isCorrect : false },
+                { id: 1, text: "hard disk drive", isCorrect : false},
+                {id: 2, text: "RAM", isCorrect : true},
+                { id: 3, text: "ROM", isCorrect: false}
             ],
         },
 //software engineering 100level
-                {
-            Questions: "Which unit is responsible for converting the data received from the user into computer understandable format?",
-            options: [
-                { id: 0, text: "memory unit", isCorrect : false },
-                { id: 1, text: "arithmetic & logic unit", isCorrect : false},
-                {id: 2, text: "input unit", isCorrect : true},
-                { id: 3, text: "output unit", isCorrect: false}
-            ],
-        },
-        {
-            Questions: " The only language which the computer understands is ______________",
-            options: [
-                { id: 0, text: "high level language", isCorrect : false },
-                { id: 1, text: "BASIC", isCorrect : false},
-                {id: 2, text: "binary language", isCorrect : true},
-                { id: 3, text: "assembly language",isCorrect: false}
-            ],
-        },
-        {
-            Questions: "	The smallest unit of data in computer is ________________?",
-            options: [
-                { id: 0, text: "byte", isCorrect : false },
-                { id: 1, text: "nibble", isCorrect : false},
-                {id: 2, text: "bit", isCorrect : true},
-                { id: 3, text: "kilobyte", isCorrect: false}
-            ],
-        },
+{
+    Questions: "  The 4th generation computers used ……………………… as their major hardware component ?",
+    options: [
+        { id: 0, text: "transitors", isCorrect : false },
+        { id: 1, text: "microprocessors", isCorrect : true},
+        {id: 2, text: "the analytical engine", isCorrect : false},
+        { id: 3, text: "abacus", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "  The LSI, MSI and VLSI are of the …………………………………………… generation?",
+    options: [
+        { id: 0, text: "5th", isCorrect : false },
+        { id: 1, text: "3rd", isCorrect : false},
+        {id: 2, text: "4th", isCorrect : true},
+        { id: 3, text: "1st", isCorrect: false}
+    ],
+},
+{
+    Questions: " Second generation computers are characterized by …………….……… as their major hardware.",
+    options: [
+        { id: 0, text: "interpreters", isCorrect : false },
+        { id: 1, text: "compilers", isCorrect : false},
+        {id: 2, text: "palmtops", isCorrect : false},
+        { id: 3, text: "transistors", isCorrect: true}
+        
+    ],
+},
+
         {
             Questions: "	One nibble is equivalent to how many bits?",
             options: [
@@ -529,12 +532,12 @@ function Question() {
             ],
         },
         {
-            Questions: "The input machine which originated in the United States around 1880s is a ___________?",
+            Questions: "which of the following is the first generation of computer ?",
             options: [
-                { id: 0, text: "bar code reader", isCorrect : false },
-                { id: 1, text: "keyboard", isCorrect : true},
-                {id: 2, text: "joystick", isCorrect : false},
-                { id: 3, text: "mouse ", isCorrect: false}
+                { id: 0, text: "ENIAC", isCorrect : true },
+                { id: 1, text: "UNIVAC", isCorrect : false},
+                {id: 2, text: "IBM 1401", isCorrect : false},
+                { id: 3, text: "IBM 360 ", isCorrect: false}
             ],
         },
         {
@@ -547,12 +550,12 @@ function Question() {
             ],
         },
         {
-            Questions: "The process of producing useful information for the user is called ___________?",
+            Questions: "what technology was used in the second generation of computers ?",
             options: [
-                { id: 0, text: "processing", isCorrect : false },
-                { id: 1, text: "inputing", isCorrect : false},
-                {id: 2, text: "outputing", isCorrect : true},
-                { id: 3, text: "controlling", isCorrect: false}
+                { id: 0, text: "microprocessors", isCorrect : false },
+                { id: 1, text: "integrated circuits", isCorrect : false},
+                {id: 2, text: "vacuum tubes", isCorrect : false},
+                { id: 3, text: "transistors", isCorrect: true}
             ],
         },
 
@@ -587,12 +590,12 @@ function Question() {
         },
 
         {
-            Questions: "Line Printers that print one line at a time are _________?",
+            Questions: "which of the following is not a charateristics of 3rd generation computers?",
             options: [
-                { id: 0, text: "Inkjet Printers", isCorrect : false },
-                { id: 1, text: "Laser Printers", isCorrect : false},
-                {id: 2, text: "drum printers", isCorrect : true},
-                { id: 3, text: "Chain Printers", isCorrect: false}
+                { id: 0, text: "use of integrated circuits", isCorrect : false },
+                { id: 1, text: "use of operating systems", isCorrect : false},
+                {id: 2, text: "use of high level programming languages", isCorrect : false},
+                { id: 3, text: "use of vacuum tubes", isCorrect: true}
             ],
         },
 
@@ -608,12 +611,12 @@ function Question() {
         },
 
         {
-            Questions: " which data structure follows the last in, first out (LIFO) principle?",
+            Questions: "the microprocessor was introduced in which generation of computers  ?",
             options: [
-                { id: 0, text: "queue", isCorrect : false },
-                { id: 1, text: "stack", isCorrect : true},
-                {id: 2, text: "linked list", isCorrect : false},
-                { id: 3, text: "tree", isCorrect: false}
+                { id: 0, text: "1st gen.", isCorrect : false },
+                { id: 1, text: "2nd gen.", isCorrect : false},
+                {id: 2, text: "3rd gen.", isCorrect : false},
+                { id: 3, text: "4th gen.", isCorrect: true}
             ],
         },
         {
@@ -627,12 +630,12 @@ function Question() {
         },
 
         {
-            Questions: " what is version control in software engineering used for?",
+            Questions: "which of the following is not a feature of the fourth generation of computers ?",
             options: [
-                { id: 0, text: "testing software", isCorrect : false },
-                { id: 1, text: "tracking changes in software code ", isCorrect : true},
-                {id: 2, text: "writing documentation ", isCorrect : false},
-                { id: 3, text: "deploying software", isCorrect: false}
+                { id: 0, text: "punch cards used for input", isCorrect : true },
+                { id: 1, text: "artificial intelligence ", isCorrect : false},
+                {id: 2, text: "microprocessor based", isCorrect : false},
+                { id: 3, text: "LSI and VLSI technology", isCorrect: false}
             ],
         },
         {
@@ -646,12 +649,12 @@ function Question() {
         },
 
         {
-            Questions: " what is the binary representation of decimal number 10?",
+            Questions: "what technology marked the beginning of the fifth generation of computers ?",
             options: [
-                { id: 0, text: "1010", isCorrect : true },
-                { id: 1, text: "1000", isCorrect : false},
-                {id: 2, text: "1110", isCorrect : false},
-                { id: 3, text: "1100", isCorrect: false}
+                { id: 0, text: "artificial intelligence", isCorrect : true },
+                { id: 1, text: "quantum comouting", isCorrect : false},
+                {id: 2, text: "neural networks", isCorrect : false},
+                { id: 3, text: "super computers", isCorrect: false}
             ],
         },
 
@@ -686,12 +689,12 @@ function Question() {
         },
 
         {
-            Questions: " Which of the following best describes software engineering??",
+            Questions: "which programming language was primarily associated with the third generation of computers ?",
             options: [
-                { id: 0, text: "Writing code in multiple programming languages", isCorrect : false },
-                { id: 1, text: "The application of a systematic approach to software design", isCorrect : true},
-                {id: 2, text: "the study of computer hardware components", isCorrect : false},
-                { id: 3, text: "Fixing bugs in a software application", isCorrect: false}
+                { id: 0, text: "assembly language", isCorrect : false },
+                { id: 1, text: "COBOL", isCorrect : true},
+                {id: 2, text: "BASIC", isCorrect : false},
+                { id: 3, text: "C++", isCorrect: false}
             ],
         },
 
@@ -739,7 +742,7 @@ function Question() {
             options: [
                 { id: 0, text: "mouse", isCorrect : false },
                 { id: 1, text: "keyboard", isCorrect : false},
-                {id: 2, text: "keyboard.", isCorrect : false},
+                {id: 2, text: "keyboard.", isCorrect : false}, 
                 { id: 3, text: "printer", isCorrect: true}
             ],
         },
@@ -753,21 +756,21 @@ function Question() {
             ],
         },
         {
-            Questions: " which of the following is not a type of computer software?",
+            Questions: "what was the size of the first generation of computers  ?",
             options: [
-                { id: 0, text: "operating system", isCorrect : false },
-                { id: 1, text: "hardware", isCorrect : true},
-                {id: 2, text: "application software", isCorrect : false},
-                { id: 3, text: "system software", isCorrect: false}
+                { id: 0, text: "room-sized", isCorrect : true },
+                { id: 1, text: "desktop-size", isCorrect : false},
+                {id: 2, text: "handheld", isCorrect : false},
+                { id: 3, text: "wearable", isCorrect: false}
             ],
         },
         {
-            Questions: " which of the following is an example of an operating system?",
+            Questions: "what was the primary characteristics of the third generation ?",
             options: [
-                { id: 0, text: "microsoft office", isCorrect : false },
-                { id: 1, text: "linux", isCorrect : true},
-                {id: 2, text: "adobe photoshop", isCorrect : false},
-                { id: 3, text: "google chrome", isCorrect: false}
+                { id: 0, text: "microprocessors", isCorrect : false },
+                { id: 1, text: "transistors", isCorrect : true},
+                {id: 2, text: "integrated circuits", isCorrect : false},
+                { id: 3, text: "vacuum tubes", isCorrect: false}
             ],
         },
         {
@@ -959,11 +962,11 @@ function Question() {
         },
 
         {
-            Questions: " data can be a word, number , a picture or a sound?",
+            Questions: "what distinguishes the 4th generation of computers from the previous generation?",
             options: [
-                { id: 0, text: "false", isCorrect : false },
-                { id: 1, text: "true", isCorrect : true},
-                {id: 2, text: "not sure", isCorrect : false},
+                { id: 0, text: "use of magnetic tapes", isCorrect : false },
+                { id: 1, text: "introduction of microprocessors", isCorrect : true},
+                {id: 2, text: "use of vacuum", isCorrect : false},
                 { id: 3, text: "i dont know", isCorrect: false}
             ],
         },
@@ -2249,8 +2252,1289 @@ function Question() {
     ],
 },
 
+//round 5 YRII
+{
+    Questions: "what is the purpose of an operating system ?",
+    options: [
+        { id: 0, text: "to manage hardware resources", isCorrect : false },
+        { id: 1, text: "to provide a user interface", isCorrect : false},
+        {id: 2, text: "to run applications", isCorrect : false},
+        { id: 3, text: "all of the above", isCorrect: true}
+    ],
+},
+{
+    Questions: "what does HTTP stand for?",
+    options: [
+        { id: 0, text: "hypertext transfer protocol", isCorrect : true },
+        { id: 1, text: "hypertext transmission protocol", isCorrect : false},
+        {id: 2, text: "hypertext transfer program", isCorrect : false},
+        { id: 3, text: "hypertext transmission program", isCorrect: false}
+    ],
+},
+{
+    Questions: "what programming language is primarily used for artificial intelligence and machine learning ?",
+    options: [
+        { id: 0, text: "c++", isCorrect : false },
+        { id: 1, text: "java", isCorrect : false},
+        {id: 2, text: "python", isCorrect : true},
+        { id: 3, text: "ruby", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is the binary equivalent of the decimal number 25 ?",
+    options: [
+        { id: 0, text: "10101", isCorrect : false },
+        { id: 1, text: "11001", isCorrect : true},
+        {id: 2, text: "11111", isCorrect : false},
+        { id: 3, text: "10011", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is the output of 3 + 4 * 2 ?",
+    options: [
+        { id: 0, text: "14", isCorrect : false },
+        { id: 1, text: "11", isCorrect : true},
+        {id: 2, text: "10", isCorrect : false},
+        { id: 3, text: "15", isCorrect: false}
+    ],
+},
+{
+    Questions: "which of the following is NOT a type of computer network ?",
+    options: [
+        { id: 0, text: "RAM", isCorrect : true },
+        { id: 1, text: "MAN", isCorrect : false},
+        {id: 2, text: "WAN", isCorrect : false},
+        { id: 3, text: "LAN", isCorrect: false}
+    ],
+},
+{
+    Questions: "which of the following is a valid programming paradigm ?",
+    options: [
+        { id: 0, text: "random-oriented programming", isCorrect : false },
+        { id: 1, text: "stochastic programming", isCorrect : false},
+        {id: 2, text: "imperative programming", isCorrect : true},
+        { id: 3, text: "guessing programming", isCorrect: false}
+    ],
+},
 
+{
+    Questions: "what is the main purpose of an operating system ?",
+    options: [
+        { id: 0, text: "manage hardware resources ", isCorrect : false },
+        { id: 1, text: "execute application", isCorrect : false},
+        {id: 2, text: "provide a user interface", isCorrect : false},
+        { id: 3, text: "all of the above", isCorrect: true}
+    ],
+},
+
+{
+    Questions: "which of the following is not a programming language ?",
+    options: [
+        { id: 0, text: "python", isCorrect : false },
+        { id: 1, text: "Java", isCorrect : false},
+        {id: 2, text: "HTML", isCorrect : true},
+        { id: 3, text: "c++", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which of the following is not a programming paradigm ?",
+    options: [
+        { id: 0, text: "sequential", isCorrect : true },
+        { id: 1, text: "procedural", isCorrect : false},
+        {id: 2, text: "functional", isCorrect : false},
+        { id: 3, text: "object-oriented", isCorrect: false}
+    ],
+},
+
+
+//software engineering domain questions
+{
+    Questions: "what is the primary goal of sotware engineering ?",
+    options: [
+        { id: 0, text: "maximizing profits", isCorrect : false },
+        { id: 1, text: "delivering high quality", isCorrect : true},
+        {id: 2, text: "miniimizing project duration", isCorrect : false},
+        { id: 3, text: "increasing market share", isCorrect: false}
+    ],
+},
+{
+    Questions: "which software development model emphasizes iterative, incremental development?",
+    options: [
+        { id: 0, text: "waterfall model", isCorrect : false },
+        { id: 1, text: "spiral model", isCorrect : false},
+        {id: 2, text: "agile model", isCorrect : true},
+        { id: 3, text: "RAD model", isCorrect: false}
+    ],
+},
+{
+    Questions: " which of the following is not a software development life cycle phase?",
+    options: [
+        { id: 0, text: "requirements analysis", isCorrect : false },
+        { id: 1, text: "design and prototyping", isCorrect : false},
+        {id: 2, text: "coding and debugging", isCorrect : false},
+        { id: 3, text: "project deployement", isCorrect: true}
+    ],
+},
+{
+    Questions: "what is the purpose of version control systems in software development?",
+    options: [
+        { id: 0, text: "tracking changes to source code", isCorrect : true },
+        { id: 1, text: "generating project documentation", isCorrect : false},
+        {id: 2, text: "optimizing database performance", isCorrect : false},
+        { id: 3, text: "monitoring system security", isCorrect: false}
+    ],
+},
+{
+    Questions: "which software testing technique focuses on examining the code logic and structure?",
+    options: [
+        { id: 0, text: "white-box testing", isCorrect : true },
+        { id: 1, text: "black-box testing ", isCorrect : false},
+        {id: 2, text: "integration testing", isCorrect : false},
+        { id: 3, text: "regression testing", isCorrect: false}
+    ],
+},
+{
+    Questions: "which software development paradigm encourages breaking down tasks into small, manageable units called 'user stories' ?",
+    options: [
+        { id: 0, text: "waterfall model", isCorrect : false },
+        { id: 1, text: "incremental model", isCorrect : false},
+        {id: 2, text: "scrum methodology", isCorrect : true},
+        { id: 3, text: "RAD model", isCorrect: false}
+    ],
+},
+{
+    Questions: "which software metric meausres the number of defects discovered per line of code?",
+    options: [
+        { id: 0, text: "cyclomatic complexity", isCorrect : false },
+        { id: 1, text: "code coverage", isCorrect : false},
+        {id: 2, text: "defect density", isCorrect : true},
+        { id: 3, text: "halstead complexity", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the primary goal of software refactoring?",
+    options: [
+        { id: 0, text: "adding new features to the software", isCorrect : false },
+        { id: 1, text: "optimizing code for performance", isCorrect : false},
+        {id: 2, text: "simplifying code structure without changing its bahavior", isCorrect : true},
+        { id: 3, text: "elminating all software bugs", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which software development principle advocates for classes to be open for extension but closed for modification ?",
+    options: [
+        { id: 0, text: "liskov substitution principle", isCorrect : false },
+        { id: 1, text: "single responsiblity principle", isCorrect : false},
+        {id: 2, text: "open/closed principle", isCorrect : true},
+        { id: 3, text: "none of the above", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which software architecture style seperates the system into components that are loosely coupled and independently deployable?",
+    options: [
+        { id: 0, text: "monolithic arcitecture", isCorrect : false },
+        { id: 1, text: "microservices architecture", isCorrect : true},
+        {id: 2, text: "clent server architecture", isCorrect : false},
+        { id: 3, text: "peer-to-peer architecture", isCorrect: false}
+    ],
+},
+// cyber security domain questions
+
+{
+    Questions: "what does 'DDOS' stand for ?",
+    options: [
+        { id: 0, text: "distributed data system ", isCorrect : false },
+        { id: 1, text: "data distribution service", isCorrect : false},
+        {id: 2, text: "distribution denial of service", isCorrect : true},
+        { id: 3, text: "data destruction strategy", isCorrect: false}
+    ],
+},
+{
+    Questions: "which of the following is NOT considered a strong password?",
+    options: [
+        { id: 0, text: "password123", isCorrect : true },
+        { id: 1, text: "[email protected]", isCorrect : false},
+        {id: 2, text: "tr0ub4dor&3", isCorrect : false},
+        { id: 3, text: "correcteHorseBatteryStaple", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is the purpose of a firewall in network security ?",
+    options: [
+        { id: 0, text: "to encrypt data transmissions", isCorrect : false },
+        { id: 1, text: "to prevent unauthrized access to or fro a private network", isCorrect : true},
+        {id: 2, text: "to manage user authentication", isCorrect : false},
+        { id: 3, text: "to speed up internet connections", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is the primary function of an antivirus software ?",
+    options: [
+        { id: 0, text: "to block spam emails", isCorrect : false },
+        { id: 1, text: "to detect and remove malicious software", isCorrect : true},
+        {id: 2, text: "to secure wireless networks", isCorrect : false},
+        { id: 3, text: "to encrypt files", isCorrect: false}
+    ],
+},
+{
+    Questions: "which encryption protocol is commonly used to secure wireless networks ?",
+    options: [
+        { id: 0, text: "WPA", isCorrect : true },
+        { id: 1, text: "HTTP ", isCorrect : false},
+        {id: 2, text: "FTP", isCorrect : false},
+        { id: 3, text: "SSL", isCorrect: false}
+    ],
+},
+{
+    Questions: "what does 'SSL' stand for ?",
+    options: [
+        { id: 0, text: "secure sockets layer", isCorrect : true },
+        { id: 1, text: "secure system login ", isCorrect : false},
+        {id: 2, text: "system security layer", isCorrect : false},
+        { id: 3, text: "strong security link ", isCorrect: false}
+    ],
+},
+{
+    Questions: "which of the following isan example of social engineering ?",
+    options: [
+        { id: 0, text: "brute force attack", isCorrect : false },
+        { id: 1, text: "sQL injection", isCorrect : false},
+        {id: 2, text: "phishing", isCorrect : true},
+        { id: 3, text: "cross-site scripting", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the purpose of penetration testing  ?",
+    options: [
+        { id: 0, text: "to detect vulnerabilities in a system or network", isCorrect : true },
+        { id: 1, text: "to authenticate users", isCorrect : false},
+        {id: 2, text: "to encrypt sensitive data", isCorrect : false},
+        { id: 3, text: "to monitor network traffic", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which of the followingis a best practice to enhance password security?",
+    options: [
+        { id: 0, text: "using the same password for multiple accounts", isCorrect : false },
+        { id: 1, text: "sharing passwords with trusted colleagues", isCorrect : false},
+        {id: 2, text: "changing passwords frequently ", isCorrect : true},
+        { id: 3, text: "writing passwords down on a sticky note", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the purpose of two-factor authentication (2FA) ?",
+    options: [
+        { id: 0, text: "to use two different antivirus programs", isCorrect : false },
+        { id: 1, text: "to provide an additional layer of security beyond passwords", isCorrect : true},
+        {id: 2, text: "to encrypt network traffic", isCorrect : false},
+        { id: 3, text: "to prevent distributed denial service attacks", isCorrect: false}
+    ],
+},
+
+
+
+//Round6 YRII current affairs
+{
+    Questions: "which company recently announced the development of its own custom ARM-based processors for it Mac computers?",
+    options: [
+        { id: 0, text: "microsoft", isCorrect : false },
+        { id: 1, text: "dell", isCorrect : true},
+        {id: 2, text: "apple", isCorrect : false},
+        { id: 3, text: "hp", isCorrect: false}
+    ],
+},
+{
+    Questions: "which technology  company recently became the world's most valuable publicly traded company, surpassing a $3 trillion market capitalization?",
+    options: [
+        { id: 0, text: "amazon", isCorrect : false },
+        { id: 1, text: "google", isCorrect : false},
+        {id: 2, text: "microsoft", isCorrect : false},
+        { id: 3, text: "apple", isCorrect: true}
+    ],
+},
+{
+    Questions: "which major cloud service provider suffered a widespread outage affecting various online services in 2021?",
+    options: [
+        { id: 0, text: "amazon web services (AWS)", isCorrect : true },
+        { id: 1, text: "google cloud platform", isCorrect : false},
+        {id: 2, text: "microsoft azure", isCorrect : false},
+        { id: 3, text: "IBM cloud", isCorrect: false}
+    ],
+},
+{
+    Questions: "which programming language topped the TIOBE index as the most popular programming language in 2021 ?",
+    options: [
+        { id: 0, text: "java", isCorrect : false },
+        { id: 1, text: "python", isCorrect : true},
+        {id: 2, text: "c++", isCorrect : false},
+        { id: 3, text: "javascript", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is the name of the recent cybersecurity incident that targeted solarwinds software, compromising numerous government and private sector networks?",
+    options: [
+        { id: 0, text: "darkside ransomware attack", isCorrect : false },
+        { id: 1, text: "wannaCry ransomware attack", isCorrect : false},
+        {id: 2, text: "stuxnet malware attack ", isCorrect : false},
+        { id: 3, text: "solarWinds supply chain attack ", isCorrect: true}
+    ],
+},
+{
+    Questions: "which gaming platform faced backlash and legal challenges over its app store polices and developer fees?",
+    options: [
+        { id: 0, text: "playstation network ", isCorrect : false },
+        { id: 1, text: "xbox live ", isCorrect : false},
+        {id: 2, text: "steam ", isCorrect : false},
+        { id: 3, text: "apple app store ", isCorrect: true}
+    ],
+},
+{
+    Questions: "what is the name of the recent internet protocol upgrade aimed at improving security and performance on the web?",
+    options: [
+        { id: 0, text: "HTTP/2 ", isCorrect : false },
+        { id: 1, text: "IPv6 ", isCorrect : false},
+        {id: 2, text: "DNS over hTTPS(DoH) ", isCorrect : false},
+        { id: 3, text: "HTTPS/3 ", isCorrect: true}
+    ],
+},
+
+{
+    Questions: "which tech billionaire recently announced plans to send cvilians to space aboard his companies spacecraft?",
+    options: [
+        { id: 0, text: "jeff bezos ", isCorrect : false },
+        { id: 1, text: "elon musk", isCorrect : true},
+        {id: 2, text: "richard branson ", isCorrect : false},
+        { id: 3, text: "larry page", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which programming language was developed by microsoft andbacame open source in 2016?",
+    options: [
+        { id: 0, text: "java", isCorrect : false },
+        { id: 1, text: "c#", isCorrect : true},
+        {id: 2, text: "swift", isCorrect : false},
+        { id: 3, text: "none of the above", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which company recently unveiled its first line of custom-designed computer chips named M1, for its laptops and desktops?",
+    options: [
+        { id: 0, text: "microsoft ", isCorrect : false },
+        { id: 1, text: "dell ", isCorrect : false},
+        {id: 2, text: " apple", isCorrect : true},
+        { id: 3, text: "hp ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which technology company recently announced its intentions to acquire the semiconductor company ARM holdings  ?",
+    options: [
+        { id: 0, text: " google ", isCorrect : false },
+        { id: 1, text: "intel ", isCorrect : false},
+        {id: 2, text: "NVDIA ", isCorrect : true},
+        { id: 3, text: "samsung", isCorrect: false}
+    ],
+},
+{
+    Questions: "which popular video conferencing platform experienced a surge in users during the COVID-19 pandemic?",
+    options: [
+        { id: 0, text: "skype ", isCorrect : false },
+        { id: 1, text:  "zoom", isCorrect : true},
+        {id: 2, text: "google meet", isCorrect : false},
+        { id: 3, text: "microsoft teams", isCorrect: false}
+    ],
+},
+{
+    Questions: "which browser introduced a new privacy called 'superduper secure mode' aimed at enhanced user privacy ?",
+    options: [
+        { id: 0, text: "google chrome", isCorrect : false },
+        { id: 1, text: "mozilla firefox", isCorrect : false},
+        {id: 2, text: "microsoft edge", isCorrect : true},
+        { id: 3, text: "safari", isCorrect: false}
+    ],
+},
+{
+    Questions: "which social media platform introduced the 'fleets' feature allowing users to post disappearing content?",
+    options: [
+        { id: 0, text: "twitter", isCorrect : true },
+        { id: 1, text: "facebook", isCorrect : false},
+        {id: 2, text: "instagram ", isCorrect : false},
+        { id: 3, text: "snapchat ", isCorrect: false}
+    ],
+},
+{
+    Questions: "which cryptocurrency surged in popularity due to its environmentally friendly consensus mechanism called 'proof of stake'?",
+    options: [
+        { id: 0, text: "bitcoin ", isCorrect : false },
+        { id: 1, text: "ethereum  ", isCorrect : true},
+        {id: 2, text: "dogecoin ", isCorrect : false},
+        { id: 3, text: "litecoin ", isCorrect: false}
+    ],
+},
+{
+    Questions: "which search engine recently faced antivirus lawsuits and regulatory scrutiny for its dominance in online search and advertising?",
+    options: [
+        { id: 0, text: "bing ", isCorrect : false },
+        { id: 1, text: "yahoo  ", isCorrect : false},
+        {id: 2, text: "duckduckGo ", isCorrect : false},
+        { id: 3, text: " google ", isCorrect: true}
+    ],
+},
+{
+    Questions: "what is the name of the recent vulneraility that impacted microsoft exhange servers, allowing unauthorized access to email accounts and network compromise?",
+    options: [
+        { id: 0, text: "heartbleed ", isCorrect : false },
+        { id: 1, text: "log4shell ", isCorrect : false},
+        {id: 2, text: "proxylogon ", isCorrect : true},
+        { id: 3, text: "spectre ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which social media platform faced criticism and regulatory hearings over its handling of misinformation and its impact on user privacy and mental health?",
+    options: [
+        { id: 0, text: "tiktok ", isCorrect : false },
+        { id: 1, text: "twitter ", isCorrect : false},
+        {id: 2, text: "facebook ", isCorrect : true},
+        { id: 3, text: "snapchat ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which tech company recently announced plans to develop a metaverse a virtual reality space where users can interact with digital environments and other users?",
+    options: [
+        { id: 0, text: "meta(fka facebook) ", isCorrect : true },
+        { id: 1, text: "google ", isCorrect : false},
+        {id: 2, text: " microsoft ", isCorrect : false},
+        { id: 3, text: "apple", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the name of the recently vulnerability that affected numerous internet-connected devices, including routers and smart home gadgets, due to a flaw in the open-source network protocol library, libgcrypt?",
+    options: [
+        { id: 0, text: "heartbleed ", isCorrect : false },
+        { id: 1, text: "log4shell ", isCorrect : true},
+        {id: 2, text: "log4j ", isCorrect : false},
+        { id: 3, text: "cursedgrabber ", isCorrect: true}
+    ],
+},
+
+//CS QuestionYEARIII
+
+{
+    Questions: "What is computer hardware? ?",
+    options: [
+        { id: 0, text: "it is a hard substance ", isCorrect : false },
+        { id: 1, text: "Invisible component of a computer", isCorrect : false},
+        {id: 2, text: "Touchable component of a system ", isCorrect : false},
+        { id: 3, text: " The physical components of a computer", isCorrect: true}
+    ],
+},
+{
+    Questions: "a DSP system is a device or setup that performs _________?",
+    options: [
+        { id: 0, text: "Analog Operations", isCorrect : false },
+        { id: 1, text: " All operations", isCorrect : false},
+        {id: 2, text: "DSP operations", isCorrect : true},
+        { id: 3, text: "none of the above ", isCorrect: false}
+    ],
+},
+{
+    Questions: "Operations of the DSP include all but one ?",
+    options: [
+        { id: 0, text: " Modulation", isCorrect : true },
+        { id: 1, text: " Moderation", isCorrect : false},
+        {id: 2, text: "Equalization", isCorrect : false},
+        { id: 3, text: "all of the above", isCorrect: false}
+    ],
+},
+{
+    Questions: "DSP systems are used in an array of applications, such as the following:",
+    options: [
+        { id: 0, text: " Audio and speech processing, Radar and sonar, Telecommunication", isCorrect : true },
+        { id: 1, text: "Seismology,  devices, Radio", isCorrect : false},
+        {id: 2, text: " Audio, speech, light ", isCorrect : false},
+        { id: 3, text: " none of the above", isCorrect: false}
+    ],
+},
+    {
+        Questions: "what is the use of a compiler in programming?",
+        options: [
+            { id: 0, text: "used to convert numbers to text", isCorrect : false },
+            { id: 1, text: "converts user written code to what a computer can understand", isCorrect : true},
+            {id: 2, text: "none of the above", isCorrect : false},
+            { id: 3, text: "error checking", isCorrect: false}
+        ],
+    },
+
+{
+    Questions: "_________ in Java is a blueprint from which individual objects are created. ?",
+    options: [
+        { id: 0, text: "public", isCorrect : false },
+        { id: 1, text: "class ", isCorrect : true},
+        {id: 2, text: "methods ", isCorrect : false},
+        { id: 3, text: " keywords", isCorrect: false}
+    ],
+},
+{
+    Questions: "___________ topology is an arrangement of the network in which every node is connected to the central hub, switch or a central computer. ?",
+    options: [
+        { id: 0, text: " star", isCorrect : true },
+        { id: 1, text: "ring", isCorrect : false},
+        {id: 2, text: "tree ", isCorrect : false},
+        { id: 3, text: "mesh ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "In OOP, the Collection of objects of the same kind is called:__________ ?",
+    options: [
+        { id: 0, text: "public ", isCorrect :  false },
+        { id: 1, text: "class", isCorrect : true},
+        {id: 2, text: "main methods ", isCorrect : false},
+        { id: 3, text: "inheritance ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what type of database model organizes dat into tables with rows and columns, where each row represents a record and each column represents a data attribute ?",
+    options: [
+        { id: 0, text: "hierarchical database model ", isCorrect : false},
+        { id: 1, text: "network database model ", isCorrect : false},
+        {id: 2, text: "relational database model ", isCorrect : true},
+        { id: 3, text: " object-oriented database model", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "__________________is  a privately owned network that operates within and nearby a single building like a home, ofice or factory.  ?",
+    options: [
+        { id: 0, text: "WAN ", isCorrect : false },
+        { id: 1, text: "LAN ", isCorrect : true},
+        {id: 2, text: "MAN",  isCorrect : false},
+        { id: 3, text: "none of the above ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "The two types of data type in Java are _____ and _____ ?",
+    options: [
+        { id: 0, text: "primitive data type and imprimitive ", isCorrect : false },
+        { id: 1, text: "primitve data type and non-imprimitve ", isCorrect : true},
+        {id: 2, text: " float and double ", isCorrect : false},
+        { id: 3, text: "none of the above ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "the following are types of a system EXCEPT?",
+    options: [
+        { id: 0, text: "physical or abstract systems  ", isCorrect : false },
+        { id: 1, text: "open or closed systems  ", isCorrect : false},
+        {id: 2, text: "man-made information systems. ", isCorrect : false},
+        { id: 3, text: "none of the above ", isCorrect: true}
         
+    ],
+},
+
+{
+    Questions: "which ofthe following components is responsible for temporarily storing data and instructions during program execution ?",
+    options: [
+        { id: 0, text: "ALU(Arithmethic logic unit) ", isCorrect : false },
+        { id: 1, text: "control unit", isCorrect : false},
+        {id: 2, text: "cache memory", isCorrect : true},
+        { id: 3, text: "none of the above", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is encapsulation in OOP?",
+    options: [
+        { id: 0, text: "hiding the implementation details of a class  ", isCorrect : true },
+        { id: 1, text: "inheriting properties from a superclass ", isCorrect : false},
+        {id: 2, text: " creating multiple instances of a class", isCorrect : false},
+        { id: 3, text: "overriding methods in a subclass ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which keyword is used to implement inheritance in java ?",
+    options: [
+        { id: 0, text: "super ", isCorrect : false },
+        { id: 1, text: "this ", isCorrect : false},
+        {id: 2, text: " extends", isCorrect : true},
+        { id: 3, text: " implements", isCorrect: false}
+    ],
+},
+{
+    Questions: "which phases of SDLC involves gathering, analyzing and documenting requirements?",
+    options: [
+        { id: 0, text: "design", isCorrect : false },
+        { id: 1, text: "development", isCorrect : false},
+        {id: 2, text: "testing", isCorrect : false},
+        { id: 3, text: "requirement analysis", isCorrect: true}
+    ],
+},
+
+{
+    Questions: "which OOP concepts refers to the ability of a class tohave more than one method with the same name but different signatures ?",
+    options: [
+        { id: 0, text: " overloading", isCorrect : true },
+        { id: 1, text: "overriding ", isCorrect : false},
+        {id: 2, text: " inheritance", isCorrect : false},
+        { id: 3, text: "encapsulation ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the purpose ofthe planning phase in SDLC ?",
+    options: [
+        { id: 0, text: "to gather user requirements ", isCorrect : false},
+        { id: 1, text: "to write code ", isCorrect : false},
+        {id: 2, text: "to estimate project costs and timelines ", isCorrect : true},
+        { id: 3, text: "to identify and fix defects", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "What is abstraction?  ?",
+    options: [
+        { id: 0, text: "is the process of making an artefact  ", isCorrect : false },
+        { id: 1, text: " is the process of making an artefact more understandable through reducing the unnecessary detail and number of variables ", isCorrect : true},
+        {id: 2, text: "is the process of making an artefact more  the unnecessary detail", isCorrect : false},
+        { id: 3, text: "all of the above ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "QWERTY, DVORAK and ________ are the types of keyboard arrangement.  ?",
+    options: [
+        { id: 0, text: "AZERTY keyboard ", isCorrect : true },
+        { id: 1, text: "dunlop keyboard ", isCorrect : false},
+        {id: 2, text: " QUERTO keyboard", isCorrect : false},
+        { id: 3, text: "nonoe of the above ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the primary purpose of maintenance phase in the SDLC?",
+    options: [
+        { id: 0, text: "gathering user feedbacks", isCorrect : false},
+        { id: 1, text: "documenting requirements", isCorrect : false},
+        {id: 2, text: " fixing defects", isCorrect : true},
+        { id: 3, text: " writing codes", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the suffix of a java program file ?",
+    options: [
+        { id: 0, text: ".c ", isCorrect : false },
+        { id: 1, text: ".java ", isCorrect : true},
+        {id: 2, text: " .j", isCorrect : false},
+        { id: 3, text: "none of the above", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "The programming languages that use multithreading to process many streams of code simultaneously, which speeds up processing of complex code is known as _____________ languages ?",
+    options: [
+        { id: 0, text: " parallel processing", isCorrect : true },
+        { id: 1, text: "object_oriented ", isCorrect : false},
+        {id: 2, text: "procedural ", isCorrect : false},
+        { id: 3, text: "speed_up programming ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which of the following best defines polymorphism in OOP ?",
+    options: [
+        { id: 0, text: " ability to represent one form in multiple forms", isCorrect : true},
+        { id: 1, text: "ability to hide the implementation ", isCorrect : false},
+        {id: 2, text: "ability to create multiple instances of a class ", isCorrect : false},
+        { id: 3, text: "ability to access variables and methods of another class ", isCorrect: false}
+    ],
+},
+
+
+//SE YEARIII 
+
+{
+    Questions: "which software development principle emphasizes breaking down a system into smaller, manageable components ?",
+    options: [
+        { id: 0, text: "encapsulation  ", isCorrect : false },
+        { id: 1, text: "abstraction  ", isCorrect : false},
+        {id: 2, text: "modularity  ", isCorrect : true},
+        { id: 3, text: "inheritance  ", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is the term for the process of finding and fixing defects in software?",
+    options: [
+        { id: 0, text: " testing", isCorrect : false },
+        { id: 1, text: "coding  ", isCorrect : false},
+        {id: 2, text: "debugging ", isCorrect : true},
+        { id: 3, text: "designing  ", isCorrect: false}
+    ],
+},
+{
+    Questions: "What does UML stand for in software engineering?  ?",
+    options: [
+        { id: 0, text: " Unified Markup Link ", isCorrect : false },
+        { id: 1, text: "Universal Modeling Language  ", isCorrect : false},
+        {id: 2, text: "Unified Modeling Language ", isCorrect : false},
+        { id: 3, text: "all of the above", isCorrect: true}
+    ],
+},
+{
+    Questions: "The only language which the computer understands is ______________ ",
+    options: [
+        { id: 0, text: "Assembly Language  ", isCorrect : false },
+        { id: 1, text: " Binary Language", isCorrect : true},
+        {id: 2, text: "BASIC   ", isCorrect : false},
+        { id: 3, text: " low level language ", isCorrect: false}
+    ],
+},
+    {
+        Questions: "Android, iOS, Symbian, Windows 8 etc are some popular mobile ____  ?",
+        options: [
+            { id: 0, text: "system softwared ", isCorrect : false },
+            { id: 1, text: "application software ", isCorrect : false},
+            {id: 2, text: "operating system", isCorrect : true},
+            { id: 3, text: "none of the above ", isCorrect: false}
+        ],
+    },
+
+{
+    Questions: "which software engineering technique involves converting requirements into a detailed design specification  ?",
+    options: [
+        { id: 0, text: "object-oriented analysis ", isCorrect : true },
+        { id: 1, text: "object-oriented design  ", isCorrect : false},
+        {id: 2, text: " structured design  ", isCorrect : false},
+        { id: 3, text: " structured design ", isCorrect: false}
+    ],
+},
+{
+    Questions: "which software development emphasizes close collaboration between developers and operations teams  ?",
+    options: [
+        { id: 0, text: "devops  ", isCorrect : true },
+        { id: 1, text: " waterfall", isCorrect : false},
+        {id: 2, text: " RAD(rapid application development) ", isCorrect : false},
+        { id: 3, text: "extreme programming (XP)  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "in modular programming approach program is further divided into ______  ?",
+    options: [
+        { id: 0, text: " object ", isCorrect :  false },
+        { id: 1, text: "modules ", isCorrect : true},
+        {id: 2, text: " question ", isCorrect : false},
+        { id: 3, text: "solution  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " which of the following represents the life cycle of software development?",
+    options: [
+        { id: 0, text: " analysis > design > coding > testing > operation and maintenance ", isCorrect : true},
+        { id: 1, text: " analysis > design > coding > operation and maintenance > testing ", isCorrect : false},
+        {id: 2, text: " design > analysis > coding > testing > operation and maintenance  ", isCorrect : false},
+        { id: 3, text: "design > analysis > coding > operation and maintenance > testing  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which of the following is/are te phases of system development life cycle?",
+    options: [
+        { id: 0, text: "implementation  ", isCorrect : false },
+        { id: 1, text: " feasibility study ", isCorrect : false},
+        {id: 2, text: " all of the options",  isCorrect : true},
+        { id: 3, text: "coding  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "regression testing is primarily related to  ?",
+    options: [
+        { id: 0, text: "functional testing  ", isCorrect : false },
+        { id: 1, text: " development testing ", isCorrect : false},
+        {id: 2, text: " data flow testing  ", isCorrect : false},
+        { id: 3, text: "maintenance testing ", isCorrect: true}
+    ],
+},
+
+{
+    Questions: "suppose a cloud contains software stack such as operating system application software etc, this model is referred as _______ model ?",
+    options: [
+        { id: 0, text: "saaS   ", isCorrect : true },
+        { id: 1, text: " iaaS  ", isCorrect : false},
+        {id: 2, text: "maaS  ", isCorrect : false},
+        { id: 3, text: " paaS ", isCorrect: false}
+        
+    ],
+},
+
+{
+    Questions: " what is a key characteristics of the microservices arhitectural style?",
+    options: [
+        { id: 0, text: " monolithic codebase", isCorrect : false },
+        { id: 1, text: "tight coupling between modules", isCorrect : false},
+        {id: 2, text: "independent deployability of services ", isCorrect : true},
+        { id: 3, text: "centralized data storage ", isCorrect: false}
+    ],
+},
+{
+    Questions: "which of the following is not a software process quality ?",
+    options: [
+        { id: 0, text: " visibility  ", isCorrect : false },
+        { id: 1, text: " timeliness  ", isCorrect : false},
+        {id: 2, text: " productivity" , isCorrect : false},
+        { id: 3, text: "portability  ", isCorrect: true}
+    ],
+},
+
+{
+    Questions: "RAD stands for ?",
+    options: [
+        { id: 0, text: "none of the mentioned   ", isCorrect : false },
+        { id: 1, text: " relative application development   ", isCorrect : false},
+        {id: 2, text: " rapid application document ", isCorrect : false},
+        { id: 3, text: " rapid application development ", isCorrect: true}
+    ],
+},
+{
+    Questions: "In which testing phase do different software modules interact with each other? ?",
+    options: [
+        { id: 0, text: "System testing ", isCorrect : false },
+        { id: 1, text: "Unit testing ", isCorrect : false},
+        {id: 2, text: " Integration testing", isCorrect : true},
+        { id: 3, text: " Acceptance testing", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the primary purpose of software testing?",
+    options: [
+        { id: 0, text: " to develop user documentation ", isCorrect : false },
+        { id: 1, text: " to identify and fix bugs", isCorrect : true},
+        {id: 2, text: " to write  efficient code ", isCorrect : false},
+        { id: 3, text: " to manage project resources ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which programming language is often used for backend development in web applications?",
+    options: [
+        { id: 0, text: " java ", isCorrect : true},
+        { id: 1, text: " hTML ", isCorrect : false},
+        {id: 2, text: "  javascript  ", isCorrect : false},
+        { id: 3, text: " cSS", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " what does the term'refactoring' mean in software engineering?",
+    options: [
+        { id: 0, text: " rewriting code from scratch", isCorrect : false },
+        { id: 1, text: " optimizing code for better performance", isCorrect : false},
+        {id: 2, text: " making changes to code to improve readability ", isCorrect : true},
+        { id: 3, text: "all of the above ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " what is the purpose of a software requirements specification document?",
+    options: [
+        { id: 0, text: " to outline ", isCorrect : false },
+        { id: 1, text: "to describe the design the user interface ", isCorrect : false},
+        {id: 2, text: " to document the functional and non-functional requirements of the software ", isCorrect : true},
+        { id: 3, text: " to specify the hardware requirements for running the software ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which of the following is not a fundamental concept of software engineering ?",
+    options: [
+        { id: 0, text: " software requirements analysis ", isCorrect : false},
+        { id: 1, text: "software testing ", isCorrect : false},
+        {id: 2, text: " software piracy ", isCorrect : true},
+        { id: 3, text: " software design ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " what is the primary purpose of software engineering in the context of computer science educaion?",
+    options: [
+        { id: 0, text: "to teach programming languages  ", isCorrect : false },
+        { id: 1, text: "to develop problem solving skills ", isCorrect : true},
+        {id: 2, text: "t design computer hardware ", isCorrect : false},
+        { id: 3, text: "to create video games", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which of the following is not a valid software testing technique?",
+    options: [
+        { id: 0, text: "white-box testing  ", isCorrect : false },
+        { id: 1, text: " black-box testing ", isCorrect : false},
+        {id: 2, text: " green-box testing ", isCorrect : true},
+        { id: 3, text: " gray-box testing ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " what is the purpose of asoftware requirement specification(SRS) document?",
+    options: [
+        { id: 0, text: "to provide a detailed breakdown of software development costs " , isCorrect : false},
+        { id: 1, text: "to outline the functionality, constraints and objectives of the software to be developed ", isCorrect: true},
+        {id: 2, text: "to describe the coding standards to be followed during software development", isCorrect : false},
+        { id: 3, text: "to document the results of software testing procedures", isCorrect: false}
+    ],
+},
+    
+//cyb year 3
+{
+    Questions: "The security of a system can be improved by ?",
+    options: [
+        { id: 0, text: "  threat monitoring ", isCorrect : true },
+        { id: 1, text: "  audit log ", isCorrect : false},
+        {id: 2, text: "  both (a) and (b) ", isCorrect : false},
+        { id: 3, text: "  none of these ", isCorrect: false}
+    ],
+},
+{
+    Questions: "Worm was made up of ?",
+    options: [
+        { id: 0, text: " one program ", isCorrect : false },
+        { id: 1, text: "  two programs ", isCorrect : true},
+        {id: 2, text: " three programs ", isCorrect : false},
+        { id: 3, text: " all of these  ", isCorrect: false}
+    ],
+},
+{
+    Questions: "____ are viruses that are triggered by the passage of time or on a certain date.  ?",
+    options: [
+        { id: 0, text: " Boot-sector viruses  ", isCorrect : false },
+        { id: 1, text: "Macro viruses   ", isCorrect : false},
+        {id: 2, text: "Time bombs  ", isCorrect : true},
+        { id: 3, text: "Worms ", isCorrect: false}
+    ],
+},
+{
+    Questions: "__ is a security protocol based on digital certificates.  ",
+    options: [
+        { id: 0, text: " Digital signature  ", isCorrect : false },
+        { id: 1, text: "Secure sockets layer protocol  ", isCorrect : false},
+        {id: 2, text: "  Secure electronic transactions  ", isCorrect : true},
+        { id: 3, text: " none of these  ", isCorrect: false}
+    ],
+},
+    {
+        Questions: "The ability to recover and read deleted or damaged files from a criminal's computer is an example of a law enforcement specialty called:   ?",
+        options: [
+            { id: 0, text: "robotics", isCorrect : false },
+            { id: 1, text: " simulation ", isCorrect : false},
+            {id: 2, text: " computer forensics  ", isCorrect : true},
+            { id: 3, text: "none of the above ", isCorrect: false}
+        ],
+    },
+
+{
+    Questions: "Firewalls are used to protect against __   ?",
+    options: [
+        { id: 0, text: "unauthorized Attacks", isCorrect : true },
+        { id: 1, text: " virus Attacks  ", isCorrect : false},
+        {id: 2, text: "Data Driven Attacks    ", isCorrect : false},
+        { id: 3, text: " Fire Attacks  ", isCorrect: false}
+    ],
+},
+{
+    Questions: "What is backup? ?",
+    options: [
+        { id: 0, text: " Adding more components to your network  ", isCorrect : false },
+        { id: 1, text: " Protecting data by copying it from the original source to a different  destination ", isCorrect : true},
+        {id: 2, text: " Filtering old data from new data  ", isCorrect : false},
+        { id: 3, text: " Accessing data on tape  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "Nowadays, phishing has become a criminal practice of using social engineering. For which of the following ?  ?",
+    options: [
+        { id: 0, text: "Social networking sites   ", isCorrect :  false },
+        { id: 1, text: "Mobile Phones  ", isCorrect : true},
+        {id: 2, text: "e-mails   ", isCorrect : false},
+        { id: 3, text: " Cyber cafes  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "A Proxy server is used for which of the following?  ?",
+    options: [
+        { id: 0, text: " To provide security against unauthorized users  ", isCorrect : false},
+        { id: 1, text: " To process client requests for web pages  ", isCorrect : true},
+        {id: 2, text: "  To process client requests for database access  ", isCorrect : false},
+        { id: 3, text: "  to provde tcp/ip", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "Passwords enable users to ?",
+    options: [
+        { id: 0, text: "get into the system quickly   ", isCorrect : false },
+        { id: 1, text: " make efficient use of time  ", isCorrect : false},
+        {id: 2, text: " retain confidentiality of files ",  isCorrect : true},
+        { id: 3, text: " simplify file structures  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "Which will not harm computer resources?  ?",
+    options: [
+        { id: 0, text: "firewall   ", isCorrect : true },
+        { id: 1, text: " virus  ", isCorrect : false},
+        {id: 2, text: "trojan horse ", isCorrect : false},
+        { id: 3, text: " none of the above ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " A program designed to destroy data on your computer which can travel to “infect” other computers is called a _ ?",
+    options: [
+        { id: 0, text: "disease    ", isCorrect : false },
+        { id: 1, text: "   virus ", isCorrect : true},
+        {id: 2, text: " hurricane   ", isCorrect : false},
+        { id: 3, text: "  tornado ", isCorrect: false}
+        
+    ],
+},
+
+{
+    Questions: " Trojan-Horse programs ?",
+    options: [
+        { id: 0, text: "are legitimate programs that allow unauthorized access  ", isCorrect : true },
+        { id: 1, text: " are hacker programs that do not show up on the system", isCorrect : false},
+        {id: 2, text: "really do not usually work  ", isCorrect : false},
+        { id: 3, text: "are usually immediately discovered  ", isCorrect: false}
+    ],
+},
+{
+    Questions: "Technology, no longer protected by copyright, and is available to everyone, is considered to be:  ?",
+    options: [
+        { id: 0, text: "  proprietary  ", isCorrect : true },
+        { id: 1, text: " open   ", isCorrect : false},
+        {id: 2, text: " experimental " , isCorrect : false},
+        { id: 3, text: "  in the public domain. ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "Security violation due to ?",
+    options: [
+        { id: 0, text: "malicious    ", isCorrect : false },
+        { id: 1, text: " accidental    ", isCorrect : false},
+        {id: 2, text: " both (a) and (b)  ", isCorrect : true},
+        { id: 3, text: " all of the above  ", isCorrect: false}
+    ],
+},
+{
+    Questions: "__ is a computer crime in which a criminal breaks into a computer system for exploring details of information etc.  ?",
+    options: [
+        { id: 0, text: "Hacking  ", isCorrect : true },
+        { id: 1, text: "Spoofing  ", isCorrect : false},
+        {id: 2, text: " Eavesdropping ", isCorrect : false},
+        { id: 3, text: " Phishing ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "What does SSL stand for? ?",
+    options: [
+        { id: 0, text: " Saving Sharing and Limits  ", isCorrect : false },
+        { id: 1, text: " Safe, Secured and Locked" , isCorrect : false},
+        {id: 2, text: " Secure Socket Limbs  ", isCorrect : false},
+        { id: 3, text: "Secure Socket Layers  ", isCorrect: true}
+    ],
+},
+
+{
+    Questions: " Verification of a login name and password is known as: ?",
+    options: [
+        { id: 0, text: " logging in ", isCorrect : false},
+        { id: 1, text: " authentication ", isCorrect : true},
+        {id: 2, text: "  accessibility  ", isCorrect : false},
+        { id: 3, text: " configuration", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "Which of the following enables multi-tasking in UNIX?   ?",
+    options: [
+        { id: 0, text: "time sharing   ", isCorrect : true },
+        { id: 1, text: " Multi-programming  ", isCorrect : false},
+        {id: 2, text: " Multi user   ", isCorrect : false},
+        { id: 3, text: "all of the above ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: " In what type of system is the time interval required to process and respond to inputs so small that it controls the environment.  ?",
+    options: [
+        { id: 0, text: "  Real-time system  ", isCorrect : true },
+        { id: 1, text: "Time sharing system  ", isCorrect : false},
+        {id: 2, text: " Internet system   ", isCorrect : false},
+        { id: 3, text: " . Network system ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "in which type of operating system is the ASCII text file accessible   ?",
+    options: [
+        { id: 0, text: "  Linux operating system  ", isCorrect : true},
+        { id: 1, text: " Windows operating system  ", isCorrect : false},
+        {id: 2, text: " Cloud operating system   ", isCorrect : false},
+        { id: 3, text: " Oracle system  ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "When a program tries to access a page that is mapped in address space but not loaded into physical memory, then   ?",
+    options: [
+        { id: 0, text: " Segmentation fault occurs   ", isCorrect : false },
+        { id: 1, text: " Fatal error occurs  ", isCorrect : false},
+        {id: 2, text: " Page fault occurs  ", isCorrect : true},
+        { id: 3, text: "No errors occur ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "Which one is false?  ?",
+    options: [
+        { id: 0, text: "Kernel is the program that constitutes the central core of the operating system    ", isCorrect : false },
+        { id: 1, text: "   Kernel is made of various modules which can not be loaded in running operating system ", isCorrect : true},
+        {id: 2, text: " kernel is the first part of the operating system to load into memory during booting  ", isCorrect : false},
+        { id: 3, text: " Kernel remains in the memory during the entire computer session ", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "What is the primary purpose of the network operating system?   ?",
+    options: [
+        { id: 0, text: "Share file and hardware resources   " , isCorrect : true},
+        { id: 1, text: "save files ", isCorrect: false},
+        {id: 2, text: "Process data ", isCorrect : false},
+        { id: 3, text: " all of the above", isCorrect: false}
+    ],
+},
+
+// Round4 domain questions
+//CS YEARIII
+{
+    Questions: "what does HTML  stand for?",
+    options: [
+        { id: 0, text: "hyper text markup langauage", isCorrect : true },
+        { id: 1, text: "high tech markup language", isCorrect : false},
+        {id: 2, text: "hyper tranfer markup language ", isCorrect : false},
+        { id: 3, text: "hyper transfer markup language ", isCorrect: false}
+    ],
+},
+{
+    Questions: "which data structure uses LIFO ordering ?",
+    options: [
+        { id: 0, text: " queue", isCorrect : false },
+        { id: 1, text: " stack", isCorrect : true},
+        {id: 2, text: "array ", isCorrect : false},
+        { id: 3, text: " linked list", isCorrect: false}
+    ],
+},
+//sss
+{
+    Questions: "what is the purpose of a firewall in network security ?",
+    options: [
+        { id: 0, text: "to encrypt data transmissions", isCorrect : false },
+        { id: 1, text: "to prevent unauthrized access to or fro a private network", isCorrect : true},
+        {id: 2, text: "to manage user authentication", isCorrect : false},
+        { id: 3, text: "to speed up internet connections", isCorrect: false}
+    ],
+},
+{
+    Questions: "what is the primary function of an antivirus software ?",
+    options: [
+        { id: 0, text: "to block spam emails", isCorrect : false },
+        { id: 1, text: "to detect and remove malicious software", isCorrect : true},
+        {id: 2, text: "to secure wireless networks", isCorrect : false},
+        { id: 3, text: "to encrypt files", isCorrect: false}
+    ],
+},
+{
+    Questions: "which encryption protocol is commonly used to secure wireless networks ?",
+    options: [
+        { id: 0, text: "WPA", isCorrect : true },
+        { id: 1, text: "HTTP ", isCorrect : false},
+        {id: 2, text: "FTP", isCorrect : false},
+        { id: 3, text: "SSL", isCorrect: false}
+    ],
+},
+{
+    Questions: "what does 'SSL' stand for ?",
+    options: [
+        { id: 0, text: "secure sockets layer", isCorrect : true },
+        { id: 1, text: "secure system login ", isCorrect : false},
+        {id: 2, text: "system security layer", isCorrect : false},
+        { id: 3, text: "strong security link ", isCorrect: false}
+    ],
+},
+{
+    Questions: "which of the following isan example of social engineering ?",
+    options: [
+        { id: 0, text: "brute force attack", isCorrect : false },
+        { id: 1, text: "sQL injection", isCorrect : false},
+        {id: 2, text: "phishing", isCorrect : true},
+        { id: 3, text: "cross-site scripting", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the purpose of penetration testing  ?",
+    options: [
+        { id: 0, text: "to detect vulnerabilities in a system or network", isCorrect : true },
+        { id: 1, text: "to authenticate users", isCorrect : false},
+        {id: 2, text: "to encrypt sensitive data", isCorrect : false},
+        { id: 3, text: "to monitor network traffic", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "which of the followingis a best practice to enhance password security?",
+    options: [
+        { id: 0, text: "using the same password for multiple accounts", isCorrect : false },
+        { id: 1, text: "sharing passwords with trusted colleagues", isCorrect : false},
+        {id: 2, text: "changing passwords frequently ", isCorrect : true},
+        { id: 3, text: "writing passwords down on a sticky note", isCorrect: false}
+    ],
+},
+
+{
+    Questions: "what is the purpose of two-factor authentication (2FA) ?",
+    options: [
+        { id: 0, text: "to use two different antivirus programs", isCorrect : false },
+        { id: 1, text: "to provide an additional layer of security beyond passwords", isCorrect : true},
+        {id: 2, text: "to encrypt network traffic", isCorrect : false},
+        { id: 3, text: "to prevent distributed denial service attacks", isCorrect: false}
+    ],
+},
+
+
     ])
 
     return (
