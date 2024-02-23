@@ -12,8 +12,7 @@ function Layout( ) {
     const [FirstRound, setFirstRoundResult] = useState(false)
     const [isPlaying, setIsplaying] = useState(false);
     const [showFinalResults, setFinalResults] = useState(false);
-    const [count, setCount] = useState(10);
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [count, setCount] = useState(10);    const [currentQuestion, setCurrentQuestion] = useState(0);
     const [currentOptions, setCurrentOptions] = useState(0);
     const [showQuestion, RenderQuestion] = useState(false);
     const [score, setScore] = useState(0);
@@ -31,6 +30,7 @@ function Layout( ) {
             setCurrentQuestion(index)
             setCurrentOptions(index)
             setCount(20)
+            setCount(20)
         }
     }
 
@@ -47,6 +47,7 @@ function Layout( ) {
     function showQuestions() {
         // showRound(false);
         RenderQuestion(true);
+        setCount(20); 
         setCount(20); 
                 const audioMp = new Audio(audio)
                  if((!isPlaying) && (count >= 10)){
@@ -91,6 +92,7 @@ function Layout( ) {
             setCurrentQuestion(0);
             setCurrentOptions(0);
             setCount(20);
+            setCount(20);
             
 
             if(currentQuestion == 24){
@@ -121,6 +123,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(50);
             setCurrentOptions(50);
+            setCount(20);
             setCount(20);
 
             if(currentQuestion == 74){
@@ -154,6 +157,7 @@ function Layout( ) {
             setCurrentQuestion(24);
             setCurrentOptions(24);
             setCount(20);
+            setCount(20);
 
             if(currentQuestion == 50){
                 Total = (score)/25*100
@@ -184,6 +188,7 @@ function Layout( ) {
             setCurrentQuestion(74);
             setCurrentOptions(74);
             setCount(20);
+            setCount(20);
 
             // if(currentQuestion == 100){
             //     Total = (score)/25*100
@@ -212,6 +217,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(99);
             setCurrentOptions(99);
+            setCount(20);
             setCount(20);
 
             // if(currentQuestion == ){
@@ -244,6 +250,7 @@ function Layout( ) {
             setCurrentQuestion(109);
             setCurrentOptions(109);
             setCount(20);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -273,6 +280,7 @@ function Layout( ) {
             setCurrentQuestion(130);
             setCurrentOptions(130);
             setCount(20);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -301,6 +309,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(156);
             setCurrentOptions(156);
+            setCount(20);
             setCount(20);
 
             // if(currentQuestion == ){
@@ -332,6 +341,7 @@ function Layout( ) {
             setCurrentQuestion(182);
             setCurrentOptions(182);
             setCount(20);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -361,6 +371,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(208);
             setCurrentOptions(208);
+            setCount(20);
             setCount(20);
 
             // if(currentQuestion == ){
@@ -421,6 +432,7 @@ function Layout( ) {
             setCurrentQuestion(265);
             setCurrentOptions(265);
             setCount(20);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -449,6 +461,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(284);
             setCurrentOptions(284);
+            setCount(20);
             setCount(20);
 
             // if(currentQuestion == ){
@@ -479,6 +492,7 @@ function Layout( ) {
             setCurrentQuestion(308);
             setCurrentOptions(308);
             setCount(20);
+            setCount(20);
 
             // if(currentQuestion == ){
             //     Total = (score)/25*100
@@ -508,6 +522,7 @@ function Layout( ) {
             RenderQuestion(true)
             setCurrentQuestion(332);
             setCurrentOptions(332);
+            setCount(20);
             setCount(20);
 
             // if(currentQuestion == ){
@@ -635,6 +650,7 @@ function Layout( ) {
         setCurrentOptions((prevIndex) => (prevIndex + 1) % contextValue.length);
         setSelectedAnswer(null)
         setCount(20)
+        setCount(20)
         
     }
 
@@ -677,7 +693,7 @@ function Layout( ) {
                 // setCount(10)
                 setSelectedAnswer(null)
             }
-        }, 1800);
+        }, 1500);
         return () => clearInterval(Counter);
     }, [count]);
     return (
