@@ -155,9 +155,6 @@ function Layout( ) {
                <Button pos={'absolute'} right={5} bottom={0} textTransform={'capitalize'} onClick={() => NextQuestion(event)}>next</Button>
                 <Button textTransform={'capitalize'} onClick={() => Navigations()}>navigators</Button>
                 <Button m={10} onClick={() => closeNavigations()}>x</Button>
-                <div style={{textTransform: 'capitalize', position: 'absolute',top: '100px', right: '0'}}>
-                    <Button  className='btn-main' pos={'absolute'} bottom={0} mt={15} right={5}>result</Button>
-                </div>
                 </div>
                 ) : (
                 <div className='record'>
