@@ -10,7 +10,6 @@ function Layout( ) {
 
     const [selectedAnswer, setSelectedAnswer] = useState( null);
     const [FirstRound, setFirstRoundResult] = useState(false)
-    const [isPlaying, setIsplaying] = useState(false);
     const [showFinalResults, setFinalResults] = useState(false);
     const [count, setCount] = useState(10);    const [currentQuestion, setCurrentQuestion] = useState(0);
     const [currentOptions, setCurrentOptions] = useState(0);
@@ -20,13 +19,12 @@ function Layout( ) {
     const OptionsArray = contextValue[currentOptions].options;
     const CorrectAnswer = contextValue[currentQuestion].options.isCorrect;
     const [buttonClicked, setButtonCLicked] = useState(false);
-    const [currentQuestionIndex, setcurrentQuestionIndex] = useState(0)
+    // const [currentQuestionIndex, setcurrentQuestionIndex] = useState(0)
     const [navigations, showNavigators] = useState(false);
     const Total = [];
 
     const navigateQuestions = (index) => {
         if(index >= 0 && index < contextValue.length) {
-            setcurrentQuestionIndex(index);
             setCurrentQuestion(index)
             setCurrentOptions(index)
             setCount(20)
@@ -45,598 +43,11 @@ function Layout( ) {
     }
 
     function showQuestions() {
-        // showRound(false);
         RenderQuestion(true);
         setCount(20); 
-        setCount(20); 
-                const audioMp = new Audio(audio)
-                 if((!isPlaying) && (count >= 10)){
-                  audioMp.play();
-                 }  else {
-                     audioMp.pause();
-                     audioMp.currentTime = 0;
-                 };
+        setCount(20);
     
     }
-
-
-    useEffect(() => {
-        const Button = (event) => {            
-            setFinalResults(true);
-            RenderQuestion(true)
-
-            if(buttonClicked){
-                setFinalResults(true);
-
-            }
-        };
-        const showResults = document.querySelectorAll(".btn-main");
-
-        showResults.forEach((element) =>{
-            element.addEventListener('click', Button);
-        });
-
-        return()=>{
-            showResults.forEach((element) => {
-                element.removeEventListener('click', Button);
-            });
-        };
-
-     }, [buttonClicked]);
-  
-    
-
-    useEffect(() => {
-        const RoundOne = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(0);
-            setCurrentOptions(0);
-            setCount(20);
-            setCount(20);
-            
-
-            if(currentQuestion == 24){
-                Total = (score)/25*100
-                showFinalResults(true);
-                RenderQuestion(false);
-                setFirstRoundResult(true);
-
-            }
-        };
-        const listElementROne = document.querySelectorAll(".Roundone");
-
-        listElementROne.forEach((element) =>{
-            element.addEventListener('click', RoundOne);
-        });
-
-        return()=>{
-            listElementROne.forEach((element) => {
-                element.removeEventListener('click', RoundOne);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const RoundTwo = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(50);
-            setCurrentOptions(50);
-            setCount(20);
-            setCount(20);
-
-            if(currentQuestion == 74){
-                Total = (score)/25*100
-                showFinalResults(true);
-                RenderQuestion(false);
-                setFirstRoundResult(true);
-
-            }
-        };
-        const listElementRTwo = document.querySelectorAll(".Roundtwo");
-
-        listElementRTwo.forEach((element) =>{
-            element.addEventListener('click', RoundTwo);
-        });
-
-        return()=>{
-            listElementRTwo.forEach((element) => {
-                element.removeEventListener('click', RoundTwo);
-            });
-        };
-
-     }, []);
-
-
-
-     
-    useEffect(() => {
-        const RoundThree = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(24);
-            setCurrentOptions(24);
-            setCount(20);
-            setCount(20);
-
-            if(currentQuestion == 50){
-                Total = (score)/25*100
-                showFinalResults(true);
-                RenderQuestion(false);
-                setFirstRoundResult(true);
-
-            }
-        };
-        const listElementRThree = document.querySelectorAll(".Roundthree");
-
-        listElementRThree.forEach((element) =>{
-            element.addEventListener('click', RoundThree);
-        });
-
-        return()=>{
-            listElementRThree.forEach((element) => {
-                element.removeEventListener('click', RoundThree);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const RoundFour = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(74);
-            setCurrentOptions(74);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == 100){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRTwo = document.querySelectorAll(".Roundfour");
-
-        listElementRTwo.forEach((element) =>{
-            element.addEventListener('click', RoundFour);
-        });
-
-        return()=>{
-            listElementRTwo.forEach((element) => {
-                element.removeEventListener('click', RoundFour);
-            });
-        };
-
-     }, []);
-
-     useEffect(() => {
-        const RoundFive = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(99);
-            setCurrentOptions(99);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRFive = document.querySelectorAll(".Roundfive");
-
-        listElementRFive.forEach((element) =>{
-            element.addEventListener('click', RoundFive);
-        });
-
-        return()=>{
-            listElementRFive.forEach((element) => {
-                element.removeEventListener('click', RoundFive);
-            });
-        };
-
-     }, []);
-
-
-     
-     useEffect(() => {
-        const RoundSix = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(109);
-            setCurrentOptions(109);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRSix = document.querySelectorAll(".Roundsix");
-
-        listElementRSix.forEach((element) =>{
-            element.addEventListener('click', RoundSix);
-        });
-
-        return()=>{
-            listElementRSix.forEach((element) => {
-                element.removeEventListener('click', RoundSix);
-            });
-        };
-
-     }, []);
-
-     useEffect(() => {
-        const YrIIRoundOne = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(130);
-            setCurrentOptions(130);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrone = document.querySelectorAll(".YRII_Roundone");
-
-        listElementRYrone.forEach((element) =>{
-            element.addEventListener('click', YrIIRoundOne);
-        });
-
-        return()=>{
-            listElementRYrone.forEach((element) => {
-                element.removeEventListener('click', YrIIRoundOne);
-            });
-        };
-
-     }, []);
-
-     useEffect(() => {
-        const YrIIRoundTwo = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(156);
-            setCurrentOptions(156);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrtwo = document.querySelectorAll(".YRII_Roundtwo");
-
-        listElementRYrtwo.forEach((element) =>{
-            element.addEventListener('click', YrIIRoundTwo);
-        });
-
-        return()=>{
-            listElementRYrtwo.forEach((element) => {
-                element.removeEventListener('click', YrIIRoundTwo);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const YrIIRoundThree = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(182);
-            setCurrentOptions(182);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrthree = document.querySelectorAll(".YRII_Roundthree");
-
-        listElementRYrthree.forEach((element) =>{
-            element.addEventListener('click', YrIIRoundThree);
-        });
-
-        return()=>{
-            listElementRYrthree.forEach((element) => {
-                element.removeEventListener('click', YrIIRoundThree);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const YrIIRoundFour = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(208);
-            setCurrentOptions(208);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrfour = document.querySelectorAll(".YRII_Roundfour");
-
-        listElementRYrfour.forEach((element) =>{
-            element.addEventListener('click', YrIIRoundFour);
-        });
-
-        return()=>{
-            listElementRYrfour.forEach((element) => {
-                element.removeEventListener('click', YrIIRoundFour);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const YrIIRoundFIve = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(234);
-            setCurrentOptions(234);
-            setCount(20);
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrfive = document.querySelectorAll(".YRII_Roundfive");
-
-        listElementRYrfive.forEach((element) =>{
-            element.addEventListener('click', YrIIRoundFIve);
-        });
-
-        return()=>{
-            listElementRYrfive.forEach((element) => {
-                element.removeEventListener('click', YrIIRoundFIve);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const YrIIRoundFSix = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(265);
-            setCurrentOptions(265);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrsix = document.querySelectorAll(".YRII_Roundsix");
-
-        listElementRYrsix.forEach((element) =>{
-            element.addEventListener('click', YrIIRoundFSix);
-        });
-
-        return()=>{
-            listElementRYrsix.forEach((element) => {
-                element.removeEventListener('click', YrIIRoundFSix);
-            });
-        };
-
-     }, []);
-
-     useEffect(() => {
-        const YrIIIRoundone = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(284);
-            setCurrentOptions(284);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrIIIone= document.querySelectorAll(".YRIII_Roundone");
-
-        listElementRYrIIIone.forEach((element) =>{
-            element.addEventListener('click', YrIIIRoundone);
-        });
-
-        return()=>{
-            listElementRYrIIIone.forEach((element) => {
-                element.removeEventListener('click', YrIIIRoundone);
-            });
-        };
-
-     }, []);
-
-     useEffect(() => {
-        const YrIIIRoundtwo = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(308);
-            setCurrentOptions(308);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrIIItwo= document.querySelectorAll(".YRIII_Roundtwo");
-
-        listElementRYrIIItwo.forEach((element) =>{
-            element.addEventListener('click', YrIIIRoundtwo);
-        });
-
-        return()=>{
-            listElementRYrIIItwo.forEach((element) => {
-                element.removeEventListener('click', YrIIIRoundtwo);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const YrIIIRoundthree = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(332);
-            setCurrentOptions(332);
-            setCount(20);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrIIIthree= document.querySelectorAll(".YRIII_Roundthree");
-
-        listElementRYrIIIthree.forEach((element) =>{
-            element.addEventListener('click', YrIIIRoundthree);
-        });
-
-        return()=>{
-            listElementRYrIIIthree.forEach((element) => {
-                element.removeEventListener('click', YrIIIRoundthree);
-            });
-        };
-
-     }, []);
-
-
-     useEffect(() => {
-        const YrIIIRoundfour = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(356);
-            setCurrentOptions(356);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrIIIfour= document.querySelectorAll(".YRIII_Roundfour");
-
-        listElementRYrIIIfour.forEach((element) =>{
-            element.addEventListener('click', YrIIIRoundfour);
-        });
-
-        return()=>{
-            listElementRYrIIIfour.forEach((element) => {
-                element.removeEventListener('click', YrIIIRoundfour);
-            });
-        };
-
-     }, []);
-
-     useEffect(() => {
-        const YrIIIRoundfive = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(366);
-            setCurrentOptions(366);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrIIIfive= document.querySelectorAll(".YRIII_Roundfive");
-
-        listElementRYrIIIfive.forEach((element) =>{
-            element.addEventListener('click', YrIIIRoundfive);
-        });
-
-        return()=>{
-            listElementRYrIIIfive.forEach((element) => {
-                element.removeEventListener('click', YrIIIRoundfive);
-            });
-        };
-
-     }, []);
-
-     useEffect(() => {
-        const YrIIIRoundsix = (event) => {
-            RenderQuestion(true)
-            setCurrentQuestion(386);
-            setCurrentOptions(386);
-            setCount(20);
-
-            // if(currentQuestion == ){
-            //     Total = (score)/25*100
-            //     showFinalResults(true);
-            //     RenderQuestion(false);
-            //     setFirstRoundResult(true);
-
-            // }
-        };
-        const listElementRYrIIIsix= document.querySelectorAll(".YRIII_Roundsix");
-
-        listElementRYrIIIsix.forEach((element) =>{
-            element.addEventListener('click', YrIIIRoundsix);
-        });
-
-        return()=>{
-            listElementRYrIIIsix.forEach((element) => {
-                element.removeEventListener('click', YrIIIRoundsix);
-            });
-        };
-
-     }, []);
-
-
-
     function Menu(){
         RenderQuestion(false); 
         setScore(0);
@@ -651,7 +62,7 @@ function Layout( ) {
         setSelectedAnswer(null)
         setCount(20)
         setCount(20)
-        
+  
     }
 
     const optionClicked = (CorrectAnswer) => {
@@ -660,13 +71,7 @@ function Layout( ) {
 
         setSelectedAnswer(CorrectAnswer);
 
-        const audioMp = new Audio(audio)
-        if((!isPlaying) && (count >= 10)){
-         audioMp.play();
-        }  else {
-            audioMp.pause();
-            audioMp.currentTime = 0;
-        }  
+     
      //Conditional statements   
     if(currentQuestion + 1 < contextValue.length) {
         // setCurrentQuestion(currentQuestion + 1);
@@ -674,12 +79,10 @@ function Layout( ) {
         
     } else {
         setFinalResults(true);
+        
     }
     if(CorrectAnswer == true) {
-         
-
-        setScore(score + 1);
-        
+        setScore(score + 1); 
     } else {
         console.log("wrong answer");
         }
@@ -715,50 +118,7 @@ function Layout( ) {
                      >
                     <button className='startbtn' onClick={() => showQuestions()}>start</button>
               </Center>
-              <div style={{textTransform: 'capitalize', position: 'absolute',top: '100px', right: '0'}}>
-                    <Button  className='btn-main' pos={'absolute'} bottom={0} mt={15} right={5}>result</Button>
-                </div>
-              <div>
-                <Center>
-            <Grid className='Rounds_main' cursor={'pointer'} textTransform={'capitalize'} templateColumns='repeat(5, 1fr)' gap={6}>
-                <ul id='Rounds'>
-                {/* Year one */}
-                YEAR ONE
-                    <GridItem w='200%' h='10' listStyleType={'none'}>
-                     Data and information   <li className='Roundone'>round 1</li>
-                     computer generation   <li className='Roundtwo'>round 2</li>
-                      computer memory  <li className='Roundthree'>round 3</li>
-                     communication and technology   <li className='Roundfour'>round 4</li>
-                      algorithm and binary representation  <li className='Roundfive'>round 5</li>
-                      basic computing   <li className='Roundsix'>round 6</li>
-                        </GridItem>
-                </ul>
-                {/* Year two  */}
-                    <GridItem className='Yrtwo' listStyleType={ 'none'} w='200%' h='10'>
-                        YEAR TWO
-                        <li className='YRII_Roundone'>round 1</li>
-                        <li className='YRII_Roundtwo'>round 2</li>
-                        <li className='YRII_Roundthree'>round 3</li>
-                        <li className='YRII_Roundfour'>round 4</li>
-                        <li className='YRII_Roundfive'>round 5</li>
-                        <li className='YRII_Roundsix'>round 6</li>
-                    </GridItem>
-                    {/* Year Three */}
-                    <GridItem listStyleType={'none'} w='200%' h='10'>
-                        YEAR THREE
-                        <li className='YRIII_Roundone'>round 1</li>
-                        <li className='YRIII_Roundtwo'>round 2</li>
-                        <li className='YRIII_Roundthree'>round 3</li>
-                        <li className='YRIII_Roundfour'>round 4</li>
-                        <li className='YRIII_Roundfive'>round 5</li>
-                        <li className='YRIII_Roundsix'>round 6</li>
-                    </GridItem>
-                    
-                    
-            </Grid>
-                </Center>
 
-            </div>
           </div>
         ) :
         showFinalResults == false ? (
@@ -781,37 +141,39 @@ function Layout( ) {
                     OptionsArray.map(option => (
                     <li
                     style={{
-                        backgroundColor: selectedAnswer === option.isCorrect ? option.isCorrect ? 'blue': '#434242' : '#434242'
+                        backgroundColor:'#434242'
                     }}
                     className='text'
                     onClick={() => optionClicked(option.isCorrect)} key={option.text}>{option.text} </li>
                 ))
             }
                </Box>
-               <Box pos={'absolute'} right={10} top={10}>
-                     <p>Question {currentQuestion}/100</p>
-               </Box>
-            <Button pos={'absolute'} right={5} bottom={0} textTransform={'capitalize'} onClick={() => NextQuestion(event)}>next</Button>
-            <Button textTransform={'capitalize'} onClick={() => Navigations()}>navigators</Button>
-            <Button m={10} onClick={() => closeNavigations()}>x</Button>
-               </div>
                
-               ) : (
-        <div className='record'>
-            <p>Score so far : {score}/ </p> 
-            <p>{(score/130 ) * 100}%</p>
-        </div>
-        ) 
-        }
-
-        {
-            navigations == true ? (
-                <div className='text'>
-                    {contextValue.map((contextValue, index) => (
+               <Box pos={'absolute'} right={10} top={10}>
+                     <p>Question {currentQuestion}/32</p>
+               </Box>
+               <Button pos={'absolute'} right={5} bottom={0} textTransform={'capitalize'} onClick={() => NextQuestion(event)}>next</Button>
+                <Button textTransform={'capitalize'} onClick={() => Navigations()}>navigators</Button>
+                <Button m={10} onClick={() => closeNavigations()}>x</Button>
+                <div style={{textTransform: 'capitalize', position: 'absolute',top: '100px', right: '0'}}>
+                    <Button  className='btn-main' pos={'absolute'} bottom={0} mt={15} right={5}>result</Button>
+                </div>
+                </div>
+                ) : (
+                <div className='record'>
+                    <p>Score so far : {score}/31 </p> 
+                    <p>{(score/31 ) * 100}%</p>
+                </div>
+                ) 
+                }
+                {
+                navigations == true ? (
+                    <div className='text'>
+                        {contextValue.map((contextValue, index) => (
                         <button style={{padding: '10px'}} key={index} onClick={() => navigateQuestions(index)}>{index + 1}</button>
-                    ))}    
-               </div>
-            ) :(
+                        ))}    
+                    </div>
+                    ) :(
                 <div></div>
             )
         }
